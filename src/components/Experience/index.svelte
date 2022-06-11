@@ -5,7 +5,7 @@
 </script>
 
 <CategoryBlock>
-  <CategoryTitle title={'Experence'} />
+  <CategoryTitle title={'Experience'} />
   <ExperienceSection
     title={'Teaching Assistant'}
     componey={'WeHelp'}
@@ -22,7 +22,7 @@
     componey={'91APP, Inc'}
     startDate={new Date(2020, 8)}
     endDate={new Date(2020, 4)}
-    location={'Taipie City, Taiwan'}
+    location={'Taipei City, Taiwan'}
     description={[
       'Developed front-end part of e-commerce service, including HiLife logistics management, Google ReCaptcha integration, and shipping coupon feature,',
       "Customized PXGo! online shopping site for PX Mart's requirements, e.g., re-designing category page, adding new features in store CMS(Content Management System) and refactoring product card",
