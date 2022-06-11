@@ -3,6 +3,7 @@
   import Skills from '$components/Skills/index.svelte';
   import Experience from '$components/Experience/index.svelte';
   import Projects from '$components/Projects/index.svelte';
+  import Education from '$components/Education/index.svelte';
 </script>
 
 <main class="mx-auto p-8 max-w-screen-xl">
@@ -10,4 +11,5 @@
   <Skills />
   <Experience />
   <Projects />
+  <Education />
 </main>
