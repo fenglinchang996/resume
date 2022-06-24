@@ -9,8 +9,8 @@
   <ProjectSection
     title={'MetaBus'}
     briefDescription={"A web service providing information about Taiwan bus, including live bus timetables, bus route maps,  nearby stops' details and bus routes / stops searching"}
-    startDate={new Date(2020, 10)}
-    endDate={new Date(2020, 10)}
+    startDate={new Date(2021, 10)}
+    endDate={new Date(2021, 10)}
     repoURL={'github.com/super996programmer/meta-bus'}
     skills={[
       'React',

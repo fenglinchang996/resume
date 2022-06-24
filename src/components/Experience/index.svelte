@@ -21,7 +21,7 @@
     title={'Front-End Engineer'}
     componey={'91APP, Inc'}
     startDate={new Date(2020, 8)}
-    endDate={new Date(2020, 4)}
+    endDate={new Date(2022, 4)}
     location={'Taipei City, Taiwan'}
     description={[
       'Developed front-end part of e-commerce service, including HiLife logistics management, Google ReCaptcha integration, and shipping coupon feature,',
@@ -33,7 +33,7 @@
     title={'Front-End Trainee'}
     componey={'AppWorks School'}
     startDate={new Date(2020, 3)}
-    endDate={new Date(2022, 8)}
+    endDate={new Date(2020, 8)}
     location={'Taipei City, Taiwan'}
     description={[
       'Learned programming knowledge for front-end development, e.g. HTML, CSS, JavaScript, Webpack, and React',
