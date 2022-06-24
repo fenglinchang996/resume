@@ -11,11 +11,7 @@
     componey={'WeHelp'}
     startDate={new Date(2021, 11)}
     location={'Taipei City, Taiwan'}
-    description={[
-      'Gave trainees advice on their assignments / personal projects',
-      'Shared front-end tech knowledge with trainees',
-      'Provided mock interviews for front-end trainees',
-    ]}
+    description={'Supported the WeHelp Bootcamp mentor to guide 50+ trainees to become junior front-end / backend engineers'}
   />
   <ExperienceSection
     title={'Front-End Engineer'}
@@ -24,8 +20,9 @@
     endDate={new Date(2022, 4)}
     location={'Taipei City, Taiwan'}
     description={[
-      'Developed front-end part of e-commerce service, including HiLife logistics management, Google ReCaptcha integration, and shipping coupon feature,',
+      'Developed front-end part of e-commerce service, including HiLife logistics management, Google ReCaptcha integration, and shipping coupon feature',
       "Customized PXGo! online shopping site for PX Mart's requirements, e.g., re-designing category page, adding new features in store CMS(Content Management System) and refactoring product card",
+      'Collaborated and communicated with team members (PO, UI/UX, QA, and other SWE) in SCRUM development process to deliver tasks on time',
     ]}
     skills={['React', 'Redux', 'styled-components', 'TypeScript', 'AngularJS']}
   />
