@@ -1,13 +1,13 @@
 <script>
   import Contact from './Contact.svelte';
   import Headline from './Headline.svelte';
-  import Motto from './Motto.svelte';
+  import Summary from './Summary.svelte';
   import Name from './Name.svelte';
 </script>
 
 <article>
   <Name />
   <Headline />
-  <Motto />
+  <Summary />
   <Contact />
 </article>
