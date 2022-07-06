@@ -8,7 +8,7 @@
   <CategoryTitle title={'Skills'} />
   <SkillSection
     title={'Programming Language'}
-    skillList={['JavaScript(ES6+) / TypeScript', 'HTML', 'CSS', 'Python', 'C#']}
+    skillList={['JavaScript(ES6+) / TypeScript', 'HTML', 'CSS']}
   />
   <SkillSection
     title={'Front-End Framework / Library'}
@@ -21,12 +21,7 @@
     ]}
   />
   <SkillSection
-    title={'Front-end Tooling'}
+    title={'Front-End Tooling'}
     skillList={['NPM', 'Webpack', 'ESLint']}
   />
-  <SkillSection
-    title={'Cloud Service'}
-    skillList={['Firebase Hosting / Cloud Firestore']}
-  />
-  <SkillSection title={'Others'} skillList={['Git']} />
 </CategoryBlock>

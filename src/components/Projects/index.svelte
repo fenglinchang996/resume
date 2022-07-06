@@ -8,7 +8,7 @@
   <CategoryTitle title={'Projects'} />
   <ProjectSection
     title={'MetaBus'}
-    briefDescription={"A web service providing information about Taiwan bus, including live bus timetables, bus route maps,  nearby stops' details and bus routes / stops searching"}
+    briefDescription={'A web service providing information about Taiwan buses, including live bus timetables, bus route maps, and nearby stops / routes'}
     startDate={new Date(2021, 10)}
     endDate={new Date(2021, 10)}
     repoURL={'github.com/super996programmer/meta-bus'}
@@ -22,7 +22,7 @@
   />
   <ProjectSection
     title={'MindNote'}
-    briefDescription={'A web tool for organizing the ideas with mind mapping and note taking'}
+    briefDescription={'A web tool for organizing ideas with mind mapping and note taking'}
     startDate={new Date(2020, 6)}
     endDate={new Date(2020, 7)}
     projectURL={'mindnote-f39e9.web.app'}
