@@ -1,6 +1,7 @@
 <script lang="ts">
   export let title: string;
   export let componey: string;
+  export let componeyURL: string = '';
   export let location: string;
   export let startDate: Date;
   export let endDate: Date | null = null;
@@ -11,7 +12,11 @@
 <section class="my-2">
   <h3 class="text-lg font-bold">{title}</h3>
   <div class="font-bold">
-    {componey}
+    {#if componeyURL}
+      <a href={componeyURL} class="underline">{componey}</a>
+    {:else}
+      {componey}
+    {/if}
   </div>
   <div class="text-gray-500">
     {`${startDate.toLocaleString('en-US', {

@@ -9,6 +9,7 @@
   <ExperienceSection
     title={'Front-End Engineer'}
     componey={'91APP, Inc'}
+    componeyURL={'https://www.91app.com'}
     startDate={new Date(2020, 8)}
     endDate={new Date(2022, 4)}
     location={'Taipei City, Taiwan'}
@@ -22,6 +23,7 @@
   <ExperienceSection
     title={'R&D Engineer'}
     componey={'CTCI Corporation'}
+    componeyURL={'https://www.ctci.com'}
     startDate={new Date(2018, 3)}
     endDate={new Date(2020, 3)}
     location={'Taipei City, Taiwan'}
@@ -30,6 +32,7 @@
   <ExperienceSection
     title={'Process Engineer'}
     componey={'CTCI Corporation'}
+    componeyURL={'https://www.ctci.com'}
     startDate={new Date(2016, 8)}
     endDate={new Date(2018, 3)}
     location={'Taipei City, Taiwan'}
@@ -41,6 +44,7 @@
   <ExperienceSection
     title={'Front-End Teaching Assistant'}
     componey={'WeHelp'}
+    componeyURL={'https://training.pada-x.com/wehelp'}
     startDate={new Date(2021, 11)}
     location={'Taipei City, Taiwan'}
     description={'Mentored 25+ trainees to become junior front-end engineers'}
@@ -49,6 +53,7 @@
   <ExperienceSection
     title={'Front-End Trainee'}
     componey={'AppWorks School'}
+    componeyURL={'https://school.appworks.tw'}
     startDate={new Date(2020, 3)}
     endDate={new Date(2020, 8)}
     location={'Taipei City, Taiwan'}
