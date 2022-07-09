@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { decorateURL } from '$utils';
   export let title: string;
   export let briefDescription: string;
   export let startDate: Date;
@@ -7,11 +8,6 @@
   export let repoURL: string = '';
   export let detailedDescription: string | string[] | null = null;
   export let skills: string[] = [];
-
-  const decorateURL = (URL: string) => {
-    if (URL.startsWith('https://')) return URL;
-    return `https://${URL}`;
-  };
 </script>
 
 <section class="my-2">

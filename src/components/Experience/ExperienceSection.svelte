@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { decorateURL } from '$utils';
   export let title: string;
   export let componey: string;
   export let componeyURL: string = '';
@@ -18,7 +19,7 @@
     <i class="fa-solid fa-building" />
     <span>
       {#if componeyURL}
-        <a href={componeyURL} class="underline">{componey}</a>
+        <a href={decorateURL(componeyURL)} class="underline">{componey}</a>
       {:else}
         {componey}
       {/if}
