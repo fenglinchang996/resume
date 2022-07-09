@@ -15,7 +15,7 @@
 </script>
 
 <section class="my-2">
-  <h3 class="text-lg font-bold">{title}</h3>
+  <h3 class="text-lg font-bold"><i class="fa-solid fa-folder" /> {title}</h3>
   <div class="font-bold">{briefDescription}</div>
   <div class="text-gray-500">
     {`${startDate.toLocaleString('en-US', {
@@ -63,7 +63,7 @@
   {/if}
   {#if skills.length > 0}
     <div class="my-1">
-      Skills: {skills.join(', ')}
+      <i class="fa-solid fa-screwdriver-wrench" /> Skills: {skills.join(', ')}
     </div>
   {/if}
 </section>

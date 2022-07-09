@@ -10,13 +10,19 @@
 </script>
 
 <section class="my-2">
-  <h3 class="text-lg font-bold">{title}</h3>
+  <h3 class="text-lg font-bold">
+    <i class="fa-solid fa-clipboard-user" />
+    {title}
+  </h3>
   <div class="font-bold">
-    {#if componeyURL}
-      <a href={componeyURL} class="underline">{componey}</a>
-    {:else}
-      {componey}
-    {/if}
+    <i class="fa-solid fa-building" />
+    <span>
+      {#if componeyURL}
+        <a href={componeyURL} class="underline">{componey}</a>
+      {:else}
+        {componey}
+      {/if}
+    </span>
   </div>
   <div class="text-gray-500">
     {`${startDate.toLocaleString('en-US', {
@@ -41,7 +47,7 @@
   </div>
   {#if skills.length > 0}
     <div class="my-1">
-      Skills: {skills.join(', ')}
+      <i class="fa-solid fa-screwdriver-wrench" /> Skills: {skills.join(', ')}
     </div>
   {/if}
 </section>
