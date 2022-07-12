@@ -12,11 +12,15 @@
 
 <section class="my-2">
   <h3 class="text-lg font-bold">
-    <i class="fa-solid fa-clipboard-user" />
+    <span class="inline-block w-5 text-center text-blue-400">
+      <i class="fa-solid fa-clipboard-user" />
+    </span>
     {title}
   </h3>
   <div class="font-bold">
-    <i class="fa-solid fa-building" />
+    <span class="inline-block w-5 text-center text-slate-700">
+      <i class="fa-solid fa-building" />
+    </span>
     <span>
       {#if componeyURL}
         <a href={decorateURL(componeyURL)} class="underline">{componey}</a>
@@ -48,7 +52,10 @@
   </div>
   {#if skills.length > 0}
     <div class="my-1">
-      <i class="fa-solid fa-screwdriver-wrench" /> Skills: {skills.join(', ')}
+      <span class="text-gray-600">
+        <i class="fa-solid fa-screwdriver-wrench" />
+      </span>
+      <span class="font-medium">Skills</span>: {skills.join(', ')}
     </div>
   {/if}
 </section>
