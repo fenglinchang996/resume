@@ -13,7 +13,7 @@
 <section>
   <div class="flex justify-between items-center">
     <h3 class="flex items-center">
-      <span class="w-5 text-center text-red-400">
+      <span class="w-5 text-left text-red-400">
         <i class="fa-solid fa-folder" />
       </span>
       <span class="mx-1 text-lg font-bold">{title}</span>
@@ -32,7 +32,7 @@
   <div class="my-2">
     {#if projectURL}
       <div>
-        <span class="text-blue-400 align-middle">
+        <span class="inline-block w-4 text-blue-400">
           <i class="fa-solid fa-globe" />
         </span>
         <a class="text-gray-600 underline" href={decorateURL(projectURL)}>
@@ -42,7 +42,7 @@
     {/if}
     {#if repoURL}
       <div>
-        <span class="text-[#333333] align-middle">
+        <span class="inline-block w-4 text-[#333333]">
           <i class="fa-brands fa-github" />
         </span>
         <a class="text-gray-600 underline" href={decorateURL(repoURL)}>
@@ -66,7 +66,7 @@
   {/if}
   {#if skills.length > 0}
     <div class="my-1">
-      <span class="text-gray-600">
+      <span class="inline-block w-4 text-gray-600">
         <i class="fa-solid fa-screwdriver-wrench" />
       </span>
       <span class="font-medium">Skills</span>: {skills.join(', ')}
