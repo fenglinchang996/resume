@@ -10,30 +10,32 @@
   export let skills: string[] = [];
 </script>
 
-<section class="my-2">
-  <h3 class="text-lg font-bold">
-    <span class="inline-block w-5 text-center text-red-400">
-      <i class="fa-solid fa-folder" />
-    </span>
-    {title}
-  </h3>
-  <div class="font-bold">{briefDescription}</div>
-  <div class="text-gray-500">
-    {`${startDate.toLocaleString('en-US', {
-      month: 'short',
-    })} ${startDate.getFullYear()}`} - {endDate
-      ? `${endDate.toLocaleString('en-US', {
-          month: 'short',
-        })} ${endDate.getFullYear()}`
-      : 'Present'}
+<section>
+  <div class="flex justify-between items-center">
+    <h3 class="flex items-center">
+      <span class="w-5 text-center text-red-400">
+        <i class="fa-solid fa-folder" />
+      </span>
+      <span class="mx-1 text-lg font-bold">{title}</span>
+    </h3>
+    <div class="text-gray-600">
+      {`${startDate.toLocaleString('en-US', {
+        month: 'short',
+      })} ${startDate.getFullYear()}`} - {endDate
+        ? `${endDate.toLocaleString('en-US', {
+            month: 'short',
+          })} ${endDate.getFullYear()}`
+        : 'Present'}
+    </div>
   </div>
+  <div class="font-bold">{briefDescription}</div>
   <div class="my-2">
     {#if projectURL}
       <div>
         <span class="text-blue-400 align-middle">
           <i class="fa-solid fa-globe" />
         </span>
-        <a class="text-gray-500 underline" href={decorateURL(projectURL)}>
+        <a class="text-gray-600 underline" href={decorateURL(projectURL)}>
           {projectURL}
         </a>
       </div>
@@ -43,7 +45,7 @@
         <span class="text-[#333333] align-middle">
           <i class="fa-brands fa-github" />
         </span>
-        <a class="text-gray-500 underline" href={decorateURL(repoURL)}>
+        <a class="text-gray-600 underline" href={decorateURL(repoURL)}>
           {repoURL}
         </a>
       </div>

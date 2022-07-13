@@ -3,7 +3,7 @@
   export let skillList: string[];
 </script>
 
-<section class="my-2">
+<section>
   <h3 class="font-bold">{title}</h3>
   <ul class="list-disc list-inside">
     {#each skillList as skill}

@@ -6,10 +6,22 @@
   import Education from '$components/Education/index.svelte';
 </script>
 
-<main class="mx-auto p-8 max-w-screen-xl">
+<main class="mx-auto px-6 py-4 max-w-screen-xl">
   <About />
-  <Skills />
-  <Experience />
-  <Projects />
-  <Education />
+  <div class="lg:hidden">
+    <Skills />
+    <Experience />
+    <Projects />
+    <Education />
+  </div>
+  <div class="hidden lg:grid grid-cols-2 gap-8">
+    <div>
+      <Skills />
+      <Projects />
+    </div>
+    <div>
+      <Experience />
+      <Education />
+    </div>
+  </div>
 </main>

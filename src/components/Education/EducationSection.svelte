@@ -6,13 +6,13 @@
   export let endDate: Date;
 </script>
 
-<section class="my-2">
-  <h3 class="text-lg font-bold">{school}</h3>
+<section class="md:flex md:justify-between">
   <div>
+    <h3 class="text-lg font-bold">{school}</h3>
     <div>{degree}</div>
     <div>{fieldOfStydy}</div>
   </div>
-  <div class="text-gray-500">
+  <div class="text-gray-600">
     {startDate.getFullYear()} - {endDate.getFullYear()}
   </div>
 </section>

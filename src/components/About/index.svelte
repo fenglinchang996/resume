@@ -1,13 +1,13 @@
 <script>
+  import Title from './Title.svelte';
   import Contact from './Contact.svelte';
-  import Headline from './Headline.svelte';
   import Summary from './Summary.svelte';
-  import Name from './Name.svelte';
 </script>
 
-<article>
-  <Name />
-  <Headline />
+<article class="space-y-4">
+  <div class="space-y-3 md:flex md:justify-between md:space-y-0">
+    <Title />
+    <Contact />
+  </div>
   <Summary />
-  <Contact />
 </article>

@@ -1,4 +1,4 @@
-<div class="my-4 [hyphens:auto]">
+<div class="[hyphens:auto]">
   Front-end engineer with 2 years experience developing and maintaining
   responsive websites. Familiar with web developement basics: HTML, CSS and
   JavaScript. Also experienced in modern front-end framworks and libraries, such

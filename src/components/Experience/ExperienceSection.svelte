@@ -10,35 +10,41 @@
   export let skills: string[] = [];
 </script>
 
-<section class="my-2">
-  <h3 class="text-lg font-bold">
-    <span class="inline-block w-5 text-center text-blue-400">
-      <i class="fa-solid fa-clipboard-user" />
-    </span>
-    {title}
-  </h3>
-  <div class="font-bold">
-    <span class="inline-block w-5 text-center text-slate-700">
-      <i class="fa-solid fa-building" />
-    </span>
-    <span>
-      {#if componeyURL}
-        <a href={decorateURL(componeyURL)} class="underline">{componey}</a>
-      {:else}
-        {componey}
-      {/if}
-    </span>
-  </div>
-  <div class="text-gray-500">
-    {`${startDate.toLocaleString('en-US', {
-      month: 'short',
-    })} ${startDate.getFullYear()}`} - {endDate
-      ? `${endDate.toLocaleString('en-US', {
+<section>
+  <div class="my-1 md:flex md:justify-between">
+    <div>
+      <h3 class="text-lg font-bold">
+        <span class="inline-block w-5 text-center text-blue-400">
+          <i class="fa-solid fa-clipboard-user" />
+        </span>
+        {title}
+      </h3>
+      <div class="font-bold">
+        <span class="inline-block w-5 text-center text-slate-700">
+          <i class="fa-solid fa-building" />
+        </span>
+        <span>
+          {#if componeyURL}
+            <a href={decorateURL(componeyURL)} class="underline">{componey}</a>
+          {:else}
+            {componey}
+          {/if}
+        </span>
+      </div>
+    </div>
+    <div class="my-1 text-gray-600 md:text-right">
+      <div>
+        {`${startDate.toLocaleString('en-US', {
           month: 'short',
-        })} ${endDate.getFullYear()}`
-      : 'Present'}
+        })} ${startDate.getFullYear()}`} - {endDate
+          ? `${endDate.toLocaleString('en-US', {
+              month: 'short',
+            })} ${endDate.getFullYear()}`
+          : 'Present'}
+      </div>
+      <div>{location}</div>
+    </div>
   </div>
-  <div class="text-gray-500">{location}</div>
   <div class="my-1">
     {#if Array.isArray(description)}
       <ul class="list-disc list-inside [hyphens:auto]">
@@ -51,7 +57,7 @@
     {/if}
   </div>
   {#if skills.length > 0}
-    <div class="my-1">
+    <div class="my-2">
       <span class="text-gray-600">
         <i class="fa-solid fa-screwdriver-wrench" />
       </span>
