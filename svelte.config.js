@@ -15,7 +15,7 @@ const config = {
       assets: 'docs',
     }),
     paths: {
-      base: dev ? '' : '/resume',
+      base: dev ? '' : '',
     },
     prerender: {
       default: true,
