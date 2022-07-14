@@ -11,7 +11,9 @@
 </script>
 
 <section>
-  <div class="my-1 space-y-1 md:flex md:justify-between md:space-y-0">
+  <div
+    class="my-1 space-y-1 md:flex md:justify-between md:space-y-0 print:flex print:justify-between print:space-y-0"
+  >
     <div>
       <h3 class="text-lg font-bold">
         <span class="inline-block w-5 text-left text-blue-400">

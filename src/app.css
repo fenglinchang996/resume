@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+  body {
+    zoom: 66%;
+  }
+  @page {
+    size: A4;
+    margin: 4mm 0;
+  }
+}
