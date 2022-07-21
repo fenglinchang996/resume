@@ -10,6 +10,10 @@
 <svelte:head>
   <title>FENG-LIN CHANG 張峰林</title>
   <meta property="og:title" content="FENG-LIN CHANG 張峰林" />
+  <meta
+    property="og:description"
+    content="Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites."
+  />
   <meta property="og:image" content={`${PRODUCTION_DOMAIN}/preview.png`} />
 </svelte:head>
 <main class="mx-auto px-6 py-4 max-w-screen-lg md:pt-8">
