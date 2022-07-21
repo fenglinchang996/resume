@@ -4,7 +4,7 @@
 
 @media print {
   body {
-    zoom: 66%;
+    zoom: 68%;
   }
   @page {
     size: A4;

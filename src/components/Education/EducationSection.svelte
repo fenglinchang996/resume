@@ -6,7 +6,7 @@
   export let endDate: Date;
 </script>
 
-<section class="md:flex md:justify-between">
+<section class="flex-column md:flex print:flex justify-between">
   <div>
     <h3 class="text-lg font-bold">{school}</h3>
     <div>{degree}</div>
