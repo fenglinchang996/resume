@@ -21,6 +21,7 @@ const config = {
       default: true,
     },
     alias: {
+      $constants: path.resolve('./src/constants'),
       $components: path.resolve('./src/components'),
       $utils: path.resolve('./src/utils'),
     },
