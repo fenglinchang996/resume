@@ -10,7 +10,7 @@
     class="space-y-3 md:flex md:justify-between md:space-y-0 lg:flex-col lg:gap-3"
   >
     <SkillSection
-      title={'Programming Language'}
+      title={'Language'}
       skillList={['JavaScript(ES6+) / TypeScript', 'HTML', 'CSS']}
     />
     <SkillSection
