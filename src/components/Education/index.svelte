@@ -1,25 +1,27 @@
-<script>
+<script lang="ts">
   import CategoryBlock from '$components/common/CategoryBlock.svelte';
   import CategoryTitle from '$components/common/CategoryTitle.svelte';
+  import type { Education, ResumeData } from '$types/resumeData';
+  import { getContext } from 'svelte';
+  import type { Writable } from 'svelte/store';
   import EducationSection from './EducationSection.svelte';
+
+  let educationList: Education[];
+  const resumeData = getContext<Writable<ResumeData>>('resumeData');
+  resumeData.subscribe((value) => (educationList = value.education));
 </script>
 
 <CategoryBlock>
   <CategoryTitle title={'Education'} />
-  <div class="space-y-3">
-    <EducationSection
-      school={'National Taiwan University'}
-      degree={'Master of Science - MS'}
-      fieldOfStydy={'Chemical Engineering'}
-      startDate={new Date(2014, 8)}
-      endDate={new Date(2016, 7)}
-    />
-    <EducationSection
-      school={'National Taiwan University'}
-      degree={'Bachelor of Science - BS'}
-      fieldOfStydy={'Chemical Engineering'}
-      startDate={new Date(2008, 8)}
-      endDate={new Date(2013, 7)}
-    />
-  </div>
+  <dvi class="space-y-3">
+    {#each educationList as { school, degree, fieldOfStudy, startDate, endDate }}
+      <EducationSection
+        {school}
+        {degree}
+        {fieldOfStudy}
+        {startDate}
+        {endDate}
+      />
+    {/each}
+  </dvi>
 </CategoryBlock>

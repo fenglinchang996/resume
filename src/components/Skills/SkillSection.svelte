@@ -1,6 +1,6 @@
 <script lang="ts">
   export let title: string;
-  export let skillList: string[];
+  export let skillList: string[] = [];
 </script>
 
 <section>

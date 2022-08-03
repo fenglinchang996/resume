@@ -1,8 +1,8 @@
 <script lang="ts">
   import { decorateURL } from '$utils';
   export let title: string;
-  export let componey: string;
-  export let componeyURL: string = '';
+  export let companyName: string;
+  export let companyUrl: string = '';
   export let location: string;
   export let startDate: Date;
   export let endDate: Date | null = null;
@@ -26,10 +26,11 @@
           <i class="fa-solid fa-building" />
         </span>
         <span>
-          {#if componeyURL}
-            <a href={decorateURL(componeyURL)} class="underline">{componey}</a>
+          {#if companyUrl}
+            <a href={decorateURL(companyUrl)} class="underline">{companyName}</a
+            >
           {:else}
-            {componey}
+            {companyName}
           {/if}
         </span>
       </div>
@@ -58,7 +59,7 @@
       <p>{description}</p>
     {/if}
   </div>
-  {#if skills.length > 0}
+  {#if skills?.length > 0}
     <div class="my-1">
       <span class="inline-block w-4 text-gray-600">
         <i class="fa-solid fa-screwdriver-wrench" />
