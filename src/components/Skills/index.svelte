@@ -1,6 +1,6 @@
 <script>
-  import CategoryBlock from '$components/CategoryBlock.svelte';
-  import CategoryTitle from '$components/CategoryTitle.svelte';
+  import CategoryBlock from '$components/common/CategoryBlock.svelte';
+  import CategoryTitle from '$components/common/CategoryTitle.svelte';
   import SkillSection from './SkillSection.svelte';
 </script>
 
