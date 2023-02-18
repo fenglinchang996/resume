@@ -1,6 +1,14 @@
+/* eslint-disable no-undef */
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig');
+
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-// eslint-disable-next-line no-undef
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
+  roots: ['<rootDir>'],
+  modulePaths: [compilerOptions.baseUrl],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/',
+  }),
 };
