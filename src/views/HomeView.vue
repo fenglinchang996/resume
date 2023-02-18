@@ -25,10 +25,10 @@ import Education from '@/components/Education/index.vue';
       <div>
         <Skills />
         <Project />
+        <Education />
       </div>
       <div>
         <Experience />
-        <Education />
       </div>
     </div>
   </main>

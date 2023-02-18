@@ -1,4 +1,4 @@
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 import { defineStore, storeToRefs } from 'pinia';
 import type { ResumeContent } from '@/types/resumeContent';
 import { useLanguageStore } from './language';
@@ -14,7 +14,7 @@ const resumeContentEN: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      'Front-end engineer with 2 years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Redux, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
+      'Front-end engineer with 2+ years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Vue, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
   },
   skills: [
     {
@@ -22,14 +22,8 @@ const resumeContentEN: ResumeContent = {
       skillList: ['JavaScript(ES6+) / TypeScript', 'HTML', 'CSS'],
     },
     {
-      title: 'Front-End Framework / Libaray',
-      skillList: [
-        'React(Hooks)',
-        'React Router',
-        'Redux',
-        'styled-components',
-        'Tailwind CSS',
-      ],
+      title: 'Front-End Framework / Library',
+      skillList: ['React(Hooks)', 'Vue', 'styled-components', 'Tailwind CSS'],
     },
     {
       title: 'Front-End Tooling',
@@ -37,6 +31,15 @@ const resumeContentEN: ResumeContent = {
     },
   ],
   workExperience: [
+    {
+      title: 'Front-End Engineer',
+      company: { name: 'AICS', url: 'https://aics.asus.com' },
+      startDate: new Date(2022, 9),
+      location: 'Taipei City, Taiwan',
+      description:
+        'Developed front-end part of ASUS xHIS Platform, the next generation intelligence platform for hospital information system',
+      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript'],
+    },
     {
       title: 'Front-End Engineer',
       company: { name: '91APP, Inc', url: 'https://www.91app.com' },
@@ -162,7 +165,7 @@ const resumeContentZHT: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '兩年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Redux、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，目前正在研究 Next.js、Svelte 與 TailwindCSS 等前端技術。期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
+      '兩年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Vue、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
   },
   skills: [
     {
@@ -171,13 +174,7 @@ const resumeContentZHT: ResumeContent = {
     },
     {
       title: '前端框架 / 套件',
-      skillList: [
-        'React(Hooks)',
-        'React Router',
-        'Redux',
-        'styled-components',
-        'Tailwind CSS',
-      ],
+      skillList: ['React(Hooks)', 'Vue', 'styled-components', 'Tailwind CSS'],
     },
     {
       title: '前端工具',
@@ -185,6 +182,14 @@ const resumeContentZHT: ResumeContent = {
     },
   ],
   workExperience: [
+    {
+      title: '前端工程師',
+      company: { name: 'AICS', url: 'https://aics.asus.com' },
+      startDate: new Date(2022, 9),
+      location: '台灣台北市',
+      description: '開發 ASUS xHIS Platform 次世代智慧醫療資訊平台',
+      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript'],
+    },
     {
       title: '前端工程師',
       company: { name: '91APP, Inc', url: 'https://www.91app.com' },
