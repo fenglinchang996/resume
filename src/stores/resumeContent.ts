@@ -2,7 +2,7 @@ import { computed } from 'vue';
 import { defineStore, storeToRefs } from 'pinia';
 import type { ResumeContent } from '@/types/resumeContent';
 import { useLanguageStore } from './language';
-import { lang } from '@/constants/language';
+import { lang } from '@/constant/language';
 
 const resumeContentEN: ResumeContent = {
   about: {

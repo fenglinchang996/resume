@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { lang, LANGUAGE_OPTIONS } from '@/constants/language';
+import { lang, LANGUAGE_OPTIONS } from '@/constant/language';
 import { useLanguageStore } from '@/stores/language';
 import { storeToRefs } from 'pinia';
 

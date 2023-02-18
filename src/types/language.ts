@@ -1,4 +1,4 @@
-import type { lang } from '@/constants/language';
+import type { lang } from '@/constant/language';
 
 export type Language = {
   text: string;
