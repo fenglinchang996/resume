@@ -10,7 +10,7 @@ defineProps<{ contact: Contact }>();
     <ul class="md:flex md:space-x-3">
       <li class="space-x-1">
         <span class="inline-block w-4 h-4 text-[#ea4335] text-center">
-          <i class="fa-solid fa-envelope" />
+          <i class="fa-solid fa-envelope"></i>
         </span>
         <a class="underline" :href="`mailto:${contact.email}`">
           {{ contact.email }}
@@ -18,7 +18,7 @@ defineProps<{ contact: Contact }>();
       </li>
       <li class="space-x-1">
         <span class="inline-block w-4 h-4 text-[#0072b1] text-center">
-          <i class="fa-brands fa-linkedin" />
+          <i class="fa-brands fa-linkedin"></i>
         </span>
         <a class="underline" :href="`${decorateUrl(contact.linkedin)}`">
           {{ contact.linkedin }}
@@ -26,7 +26,7 @@ defineProps<{ contact: Contact }>();
       </li>
       <li class="space-x-1">
         <span class="inline-block w-4 h-4 text-[#333333] text-center">
-          <i class="fa-brands fa-github" />
+          <i class="fa-brands fa-github"></i>
         </span>
         <a class="underline" :href="`${decorateUrl(contact.github)}`">
           {{ contact.github }}

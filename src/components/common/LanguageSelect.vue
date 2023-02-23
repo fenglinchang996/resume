@@ -29,20 +29,18 @@ function handleSelect(lang: lang) {
     >
       <i class="fa-solid fa-language"></i>
     </button>
-    <div
+    <ul
       class="absolute top-full right-0 min-w-max p-2 text-gray-400 border border-gray-400 rounded-md bg-white"
       :class="{ hidden: !isToggled }"
     >
-      <ul>
-        <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
-          <button
-            @mousedown="() => handleSelect(value)"
-            :disabled="language.value === value"
-          >
-            {{ text }}
-          </button>
-        </li>
-      </ul>
-    </div>
+      <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
+        <button
+          @mousedown="() => handleSelect(value)"
+          :disabled="language.value === value"
+        >
+          {{ text }}
+        </button>
+      </li>
+    </ul>
   </div>
 </template>

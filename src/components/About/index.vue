@@ -14,9 +14,9 @@ const about = computed(() => content.value.about);
 <template>
   <article class="space-y-4">
     <div class="space-y-3 print:flex print:justify-between print:space-y-0">
-      <Title :name="about.name" :headline="about.headline" />
+      <Title :name="about.name" :headline="about.headline"></Title>
       <Contact :contact="about.contact" />
     </div>
-    <Summary :summary="about.summary" />
+    <Summary :summary="about.summary"></Summary>
   </article>
 </template>
