@@ -44,17 +44,17 @@ const endDateString = computed(() =>
     </div>
     <div class="font-bold">{{ briefDescription }}</div>
     <div class="my-2">
-      <div v-if="projectUrl">
+      <div v-if="projectUrl" class="space-x-1">
         <span class="inline-block w-4 text-blue-400">
-          <i class="fa-solid fa-globe" />
+          <i class="fa-solid fa-globe"></i>
         </span>
         <a class="text-gray-600 underline" :href="decorateUrl(projectUrl)">
           {{ projectUrl }}
         </a>
       </div>
-      <div v-if="repoUrl">
+      <div v-if="repoUrl" class="space-x-1">
         <span class="inline-block w-4 text-[#333333]">
-          <i class="fa-brands fa-github" />
+          <i class="fa-brands fa-github"></i>
         </span>
         <a class="text-gray-600 underline" :href="decorateUrl(repoUrl)">
           {{ repoUrl }}
@@ -77,11 +77,13 @@ const endDateString = computed(() =>
         {detailedDescription}
       </p>
     </div>
-    <div v-if="skills && skills.length > 0" class="my-1 space-x-1">
+    <div v-if="skills && skills.length > 0" class="my-1 flex gap-1">
       <span class="inline-block w-4 text-gray-600">
-        <i class="fa-solid fa-screwdriver-wrench" />
+        <i class="fa-solid fa-screwdriver-wrench"></i>
       </span>
-      <span class="font-medium">Skills</span>: {{ skills.join(', ') }}
+      <div>
+        <span class="font-medium">Skills</span>: {{ skills.join(', ') }}
+      </div>
     </div>
   </section>
 </template>

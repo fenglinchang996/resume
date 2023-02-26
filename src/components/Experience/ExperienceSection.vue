@@ -69,7 +69,7 @@ const endDateString = computed(() =>
     <div class="my-2">
       <ul
         v-if="Array.isArray(description)"
-        class="list-disc list-inside [hyphens:auto]"
+        class="list-disc list-outside pl-4 [hyphens:auto]"
       >
         <li v-for="descriptionItem of description" :key="descriptionItem">
           {{ descriptionItem }}
@@ -77,11 +77,13 @@ const endDateString = computed(() =>
       </ul>
       <p v-else-if="typeof description === 'string'">{{ description }}</p>
     </div>
-    <div v-if="skills && skills.length > 0" class="my-1 space-x-1">
+    <div v-if="skills && skills.length > 0" class="my-1 flex gap-1">
       <span class="inline-block w-4 text-gray-600">
-        <i class="fa-solid fa-screwdriver-wrench" />
+        <i class="fa-solid fa-screwdriver-wrench"></i>
       </span>
-      <span class="font-medium">Skills</span>: {{ skills.join(', ') }}
+      <div>
+        <span class="font-medium">Skills</span>: {{ skills.join(', ') }}
+      </div>
     </div>
   </section>
 </template>
