@@ -1,42 +1,35 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import { lang, LANGUAGE_OPTIONS } from '@/constant/language';
 import { useLanguageStore } from '@/stores/language';
 import { storeToRefs } from 'pinia';
 
-const isToggled = ref<boolean>(false);
 const languageStore = useLanguageStore();
 const { language } = storeToRefs(languageStore);
 const { switchLanguage } = languageStore;
 
-function handleClick() {
-  isToggled.value = true;
-}
-function handleBlur() {
-  isToggled.value = false;
-}
 function handleSelect(lang: lang) {
   switchLanguage(lang);
 }
 </script>
 
 <template>
-  <div class="relative print:hidden">
-    <button
-      class="text-2xl text-gray-600"
-      @click="handleClick"
-      @blur="handleBlur"
-    >
+  <div class="relative group print:hidden">
+    <button class="text-2xl text-gray-600 pl-5">
       <i class="fa-solid fa-language"></i>
     </button>
     <ul
-      class="absolute top-full right-0 min-w-max p-2 text-gray-400 border border-gray-400 rounded-md bg-white"
-      :class="{ hidden: !isToggled }"
+      class="absolute invisible group-hover:visible top-[85%] right-[-10px] min-w-max py-2 pl-4 pr-8 space-y-1 rounded-md border border-gray-100 bg-white shadow-xl"
     >
       <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
         <button
+          @touchdown="() => handleSelect(value)"
           @mousedown="() => handleSelect(value)"
           :disabled="language.value === value"
+          class="text-gray-400"
+          :class="{
+            ['text-gray-600']: language.value === value,
+            ['font-bold']: language.value === value,
+          }"
         >
           {{ text }}
         </button>

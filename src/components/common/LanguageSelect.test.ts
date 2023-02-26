@@ -6,20 +6,6 @@ import { LANGUAGE_OPTIONS } from '@/constant/language';
 import { useLanguageStore } from '@/stores/language';
 
 describe('LanguageSelect component', () => {
-  test('test language-switch button', async () => {
-    const wrapper = mount(LanguageSelect, {
-      global: {
-        plugins: [createTestingPinia({ createSpy: vi.fn })],
-      },
-    });
-    const button = wrapper.get('button');
-    const list = wrapper.get('ul');
-    expect(list.classes('hidden')).toBe(true);
-    await button.trigger('click');
-    expect(list.classes('hidden')).toBe(false);
-    await button.trigger('blur');
-    expect(list.classes('hidden')).toBe(true);
-  });
   test('test selecting language', async () => {
     const wrapper = mount(LanguageSelect, {
       global: {
