@@ -1,3 +1,4 @@
+import { describe, test, expect, beforeEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { lang } from '@/constant/language';
 import { resumeContentEN, resumeContentZHT } from '@/data/resumeContent';

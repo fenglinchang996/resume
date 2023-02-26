@@ -1,3 +1,4 @@
+import { describe, test, expect, beforeEach } from 'vitest';
 import { setActivePinia, createPinia } from 'pinia';
 import { useLanguageStore } from './language';
 import { lang, LANGUAGE_OPTIONS } from '@/constant/language';

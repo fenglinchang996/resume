@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest';
 import { decorateUrl } from './decorateUrl';
 
 test('test decorateUrl', () => {

@@ -1,3 +1,4 @@
+import { describe, test, expect, vi } from 'vitest';
 import { flushPromises, mount } from '@vue/test-utils';
 import { createTestingPinia } from '@pinia/testing';
 import LanguageSelect from './LanguageSelect.vue';
@@ -8,7 +9,7 @@ describe('LanguageSelect component', () => {
   test('test language-switch button', async () => {
     const wrapper = mount(LanguageSelect, {
       global: {
-        plugins: [createTestingPinia()],
+        plugins: [createTestingPinia({ createSpy: vi.fn })],
       },
     });
     const button = wrapper.get('button');
@@ -22,7 +23,7 @@ describe('LanguageSelect component', () => {
   test('test selecting language', async () => {
     const wrapper = mount(LanguageSelect, {
       global: {
-        plugins: [createTestingPinia({ stubActions: false })],
+        plugins: [createTestingPinia({ stubActions: false, createSpy: vi.fn })],
       },
     });
     const list = wrapper.get('ul');
