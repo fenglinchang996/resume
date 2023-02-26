@@ -23,7 +23,7 @@ export const resumeContentEN: ResumeContent = {
     },
     {
       title: 'Front-End Tooling',
-      skillList: ['NPM', 'Webpack', 'ESLint'],
+      skillList: ['NPM / PNPM', 'Webpack', 'Vite', 'ESLint'],
     },
   ],
   workExperience: [
@@ -174,7 +174,7 @@ export const resumeContentZHT: ResumeContent = {
     },
     {
       title: '前端工具',
-      skillList: ['NPM', 'Webpack', 'ESLint'],
+      skillList: ['NPM / PNPM', 'Webpack', 'Vite', 'ESLint'],
     },
   ],
   workExperience: [
