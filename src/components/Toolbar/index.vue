@@ -4,7 +4,7 @@ import PagePrint from './PagePrint.vue';
 </script>
 
 <template>
-  <div class="flex gap-4">
+  <div class="flex items-center gap-4">
     <LanguageSelect />
     <PagePrint />
   </div>
