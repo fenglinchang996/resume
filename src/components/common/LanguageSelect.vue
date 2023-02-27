@@ -22,14 +22,14 @@ function handleSelect(lang: lang) {
     >
       <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
         <button
-          @touchdown="() => handleSelect(value)"
-          @mousedown="() => handleSelect(value)"
+          @click="() => handleSelect(value)"
           :disabled="language.value === value"
           class="text-gray-400"
-          :class="{
-            ['text-gray-600']: language.value === value,
-            ['font-bold']: language.value === value,
-          }"
+          :class="[
+            language.value === value
+              ? 'text-gray-600 font-bold'
+              : 'hover:text-blue-400',
+          ]"
         >
           {{ text }}
         </button>

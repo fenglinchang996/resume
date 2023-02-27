@@ -37,13 +37,13 @@ const endDateString = computed(() =>
       <div>
         <h3 class="text-lg font-bold">
           <span class="inline-block w-5 text-left text-blue-400">
-            <i class="fa-solid fa-clipboard-user" />
+            <i class="fa-solid fa-clipboard-user"></i>
           </span>
           {{ title }}
         </h3>
         <div class="font-bold">
           <span class="inline-block w-5 text-left text-slate-700">
-            <i class="fa-solid fa-building" />
+            <i class="fa-solid fa-building"></i>
           </span>
           <span>
             <a

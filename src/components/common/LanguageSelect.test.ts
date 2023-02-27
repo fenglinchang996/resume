@@ -17,7 +17,7 @@ describe('LanguageSelect component', () => {
       .findAll('button')
       .find((el) => el.text() === LANGUAGE_OPTIONS.ZHT.text);
     expect(zhtButton?.attributes('disabled')).toBeUndefined();
-    await zhtButton?.trigger('mousedown');
+    await zhtButton?.trigger('click');
     await flushPromises();
     const languageStore = useLanguageStore();
     expect(languageStore.language).toEqual(LANGUAGE_OPTIONS.ZHT);
