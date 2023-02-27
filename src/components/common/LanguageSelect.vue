@@ -13,7 +13,7 @@ function handleSelect(lang: lang) {
 </script>
 
 <template>
-  <div class="relative group print:hidden">
+  <div class="relative group">
     <button class="text-2xl text-gray-600 pl-5">
       <i class="fa-solid fa-language"></i>
     </button>

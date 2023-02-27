@@ -5,12 +5,14 @@ import Skills from '@/components/Skills/index.vue';
 import Experience from '@/components/Experience/index.vue';
 import Project from '@/components/Projects/index.vue';
 import Education from '@/components/Education/index.vue';
+import PagePrint from '@/components/common/PagePrint.vue';
 </script>
 
 <template>
   <main class="relative mx-auto px-6 py-4 max-w-screen-lg md:pt-8">
-    <div class="absolute top-4 right-6 md:top-8">
+    <div class="absolute top-4 right-6 md:top-8 flex gap-4 print:hidden">
       <LanguageSelect />
+      <PagePrint />
     </div>
     <About />
     <!-- mobile -->
