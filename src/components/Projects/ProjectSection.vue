@@ -34,7 +34,7 @@ const endDateString = computed(() =>
     <div class="flex justify-between items-center">
       <h3 class="flex items-center">
         <span class="w-5 text-left text-red-400">
-          <i class="fa-solid fa-folder" />
+          <i class="fa-solid fa-folder"></i>
         </span>
         <span class="mx-1 text-lg font-bold">{{ title }}</span>
       </h3>
@@ -44,15 +44,15 @@ const endDateString = computed(() =>
     </div>
     <div class="font-bold">{{ briefDescription }}</div>
     <div class="my-2">
-      <div v-if="projectUrl" class="space-x-1">
+      <div v-if="projectUrl" class="space-x-2">
         <span class="inline-block w-4 text-blue-400">
-          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-link"></i>
         </span>
         <a class="text-gray-600 underline" :href="decorateUrl(projectUrl)">
           {{ projectUrl }}
         </a>
       </div>
-      <div v-if="repoUrl" class="space-x-1">
+      <div v-if="repoUrl" class="space-x-2">
         <span class="inline-block w-4 text-[#333333]">
           <i class="fa-brands fa-github"></i>
         </span>

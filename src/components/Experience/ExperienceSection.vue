@@ -36,26 +36,28 @@ const endDateString = computed(() =>
     >
       <div>
         <h3 class="text-lg font-bold">
-          <span class="inline-block w-5 text-left text-blue-400">
-            <i class="fa-solid fa-clipboard-user"></i>
-          </span>
-          {{ title }}
+          <div>
+            <span class="inline-block w-5 text-left text-blue-400">
+              <i class="fa-solid fa-clipboard-user"></i>
+            </span>
+            <span>{{ title }}</span>
+          </div>
+          <div>
+            <span class="inline-block w-5 text-left text-slate-700">
+              <i class="fa-solid fa-building"></i>
+            </span>
+            <span>
+              <a
+                v-if="companyUrl"
+                :href="decorateUrl(companyUrl)"
+                class="underline"
+              >
+                {{ companyName }}
+              </a>
+              <span v-else>{{ companyName }}</span>
+            </span>
+          </div>
         </h3>
-        <div class="font-bold">
-          <span class="inline-block w-5 text-left text-slate-700">
-            <i class="fa-solid fa-building"></i>
-          </span>
-          <span>
-            <a
-              v-if="companyUrl"
-              :href="decorateUrl(companyUrl)"
-              class="underline"
-            >
-              {{ companyName }}
-            </a>
-            <span v-else>{{ companyName }}</span>
-          </span>
-        </div>
       </div>
       <div class="text-gray-600 md:text-right">
         <div>
