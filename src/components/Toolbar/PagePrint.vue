@@ -4,6 +4,6 @@ const print = () => window.print();
 
 <template>
   <button @click="print">
-    <i class="fa-solid fa-print text-gray-600"></i>
+    <i class="fa-solid fa-print text-gray-600 dark:text-gray-400"></i>
   </button>
 </template>

@@ -15,7 +15,7 @@ defineProps<{
       <div>{{ degree }}</div>
       <div>{{ fieldOfStudy }}</div>
     </div>
-    <div class="text-gray-600">
+    <div class="text-gray-600 dark:text-gray-400">
       {{ startDate.getFullYear() }} - {{ endDate?.getFullYear() || 'Present' }}
     </div>
   </section>

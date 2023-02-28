@@ -38,7 +38,7 @@ const endDateString = computed(() =>
         </span>
         <span class="mx-1 text-lg font-bold">{{ title }}</span>
       </h3>
-      <div class="text-gray-600">
+      <div class="text-gray-600 dark:text-gray-400">
         {{ startDateString }} - {{ endDateString }}
       </div>
     </div>
@@ -48,15 +48,21 @@ const endDateString = computed(() =>
         <span class="inline-block w-4 text-blue-400">
           <i class="fa-solid fa-link"></i>
         </span>
-        <a class="text-gray-600 underline" :href="decorateUrl(projectUrl)">
+        <a
+          class="text-gray-600 dark:text-gray-400 underline"
+          :href="decorateUrl(projectUrl)"
+        >
           {{ projectUrl }}
         </a>
       </div>
       <div v-if="repoUrl" class="space-x-2">
-        <span class="inline-block w-4 text-[#333333]">
+        <span class="inline-block w-4 text-[#333333] dark:text-neutral-300">
           <i class="fa-brands fa-github"></i>
         </span>
-        <a class="text-gray-600 underline" :href="decorateUrl(repoUrl)">
+        <a
+          class="text-gray-600 dark:text-gray-400 underline"
+          :href="decorateUrl(repoUrl)"
+        >
           {{ repoUrl }}
         </a>
       </div>
@@ -78,7 +84,7 @@ const endDateString = computed(() =>
       </p>
     </div>
     <div v-if="skills && skills.length > 0" class="my-1 flex gap-1">
-      <span class="inline-block w-4 text-gray-600">
+      <span class="inline-block w-4 text-gray-600 dark:text-gray-400">
         <i class="fa-solid fa-screwdriver-wrench"></i>
       </span>
       <div>

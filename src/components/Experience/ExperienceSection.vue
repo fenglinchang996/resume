@@ -43,7 +43,9 @@ const endDateString = computed(() =>
             <span>{{ title }}</span>
           </div>
           <div>
-            <span class="inline-block w-5 text-left text-slate-700">
+            <span
+              class="inline-block w-5 text-left text-slate-700 dark:text-slate-300"
+            >
               <i class="fa-solid fa-building"></i>
             </span>
             <span>
@@ -59,7 +61,7 @@ const endDateString = computed(() =>
           </div>
         </h3>
       </div>
-      <div class="text-gray-600 md:text-right">
+      <div class="text-gray-600 dark:text-gray-400 md:text-right">
         <div>
           {{ startDateString }}
           -
@@ -80,7 +82,7 @@ const endDateString = computed(() =>
       <p v-else-if="typeof description === 'string'">{{ description }}</p>
     </div>
     <div v-if="skills && skills.length > 0" class="my-1 flex gap-1">
-      <span class="inline-block w-4 text-gray-600">
+      <span class="inline-block w-4 text-gray-600 dark:text-gray-400">
         <i class="fa-solid fa-screwdriver-wrench"></i>
       </span>
       <div>

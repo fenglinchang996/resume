@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply dark:bg-neutral-900 dark:text-neutral-300;
+}
+
 @media print {
   body {
     zoom: 70%;

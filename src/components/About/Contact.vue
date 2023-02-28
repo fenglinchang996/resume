@@ -25,7 +25,9 @@ defineProps<{ contact: Contact }>();
         </a>
       </li>
       <li class="space-x-1">
-        <span class="inline-block w-4 h-4 text-[#333333] text-center">
+        <span
+          class="inline-block w-4 h-4 text-[#333333] dark:text-neutral-300 text-center"
+        >
           <i class="fa-brands fa-github"></i>
         </span>
         <a class="underline" :href="`${decorateUrl(contact.github)}`">
