@@ -14,7 +14,7 @@ function handleSelect(lang: lang) {
 
 <template>
   <div class="relative group">
-    <button class="text-gray-600 dark:text-gray-400 pl-5">
+    <button class="text-xl text-gray-600 dark:text-gray-400 pl-5">
       <i class="fa-solid fa-globe"></i>
     </button>
     <div

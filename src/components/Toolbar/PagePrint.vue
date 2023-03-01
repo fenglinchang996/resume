@@ -3,7 +3,10 @@ const print = () => window.print();
 </script>
 
 <template>
-  <button @click="print">
-    <i class="fa-solid fa-print text-gray-600 dark:text-gray-400"></i>
+  <button
+    class="flex items-center text-xl text-gray-600 dark:text-gray-400"
+    @click="print"
+  >
+    <i class="fa-solid fa-print"></i>
   </button>
 </template>

@@ -9,7 +9,7 @@ import Toolbar from '@/components/Toolbar/index.vue';
 
 <template>
   <main class="relative mx-auto px-6 py-4 max-w-screen-lg md:pt-8">
-    <div class="absolute top-4 right-6 md:top-8 print:hidden"><Toolbar /></div>
+    <div class="absolute top-5 right-6 md:top-8 print:hidden"><Toolbar /></div>
     <About />
     <!-- mobile -->
     <div class="lg:hidden print:hidden">
