@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run unit test
-        run: pnpm test:unit:coverage
+        run: pnpm test:unit:all
       - name: Build Pages
         run: pnpm build
       - name: Upload artifact
