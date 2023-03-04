@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
+import { useDarkModeSwitch } from '@/composables/useDarkModeSwitch';
+
+const { switchDarkMode } = useDarkModeSwitch();
 
 const isToggled = ref(false);
 watch(isToggled, (isToggled) => {
-  if (isToggled) {
-    window.document.documentElement.classList.add('dark');
-  } else {
-    window.document.documentElement.classList.remove('dark');
-  }
+  switchDarkMode(isToggled);
 });
 </script>
 <template>
