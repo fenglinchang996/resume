@@ -10,6 +10,20 @@
     />
     <meta property="og:image" content="https://feng-lin.info/preview.png" } />
     <title>FENG-LIN CHANG 張峰林</title>
+    <script>
+      (function () {
+        const userThemeAppearance = window.localStorage.getItem(
+          'user-theme-appearance'
+        );
+        if (
+          userThemeAppearance === 'dark' ||
+          (!!!userThemeAppearance &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+          window.document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>
