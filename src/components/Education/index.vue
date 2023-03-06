@@ -14,7 +14,7 @@ const educationList = computed(() => content.value.education);
 <template>
   <CategoryBlock>
     <CategoryTitle title="Education" />
-    <dvi class="space-y-3">
+    <div class="space-y-3">
       <EducationSection
         v-for="{
           school,
@@ -30,6 +30,6 @@ const educationList = computed(() => content.value.education);
         :startDate="startDate"
         :endDate="endDate"
       />
-    </dvi>
+    </div>
   </CategoryBlock>
 </template>
