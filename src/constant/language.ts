@@ -1,9 +1,9 @@
-export const enum lang {
+export const enum Lang {
   EN = 'EN',
   ZHT = 'ZHT',
 }
 
 export const LANGUAGE_OPTIONS = {
-  EN: { text: 'English', value: lang.EN },
-  ZHT: { text: '繁體中文', value: lang.ZHT },
+  EN: { text: 'English', value: Lang.EN },
+  ZHT: { text: '繁體中文', value: Lang.ZHT },
 };

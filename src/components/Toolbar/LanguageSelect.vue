@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { lang, LANGUAGE_OPTIONS } from '@/constant/language';
+import { Lang, LANGUAGE_OPTIONS } from '@/constant/language';
 import { useLanguageStore } from '@/stores/language';
 import { storeToRefs } from 'pinia';
 
@@ -7,7 +7,7 @@ const languageStore = useLanguageStore();
 const { language } = storeToRefs(languageStore);
 const { switchLanguage } = languageStore;
 
-function handleSelect(lang: lang) {
+function handleSelect(lang: Lang) {
   switchLanguage(lang);
 }
 </script>

@@ -1,6 +1,6 @@
-import type { lang } from '@/constant/language';
+import type { Lang } from '@/constant/language';
 
 export type Language = {
   text: string;
-  value: lang;
+  value: Lang;
 };
