@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { decorateUrl } from '@/utils/decorateUrl';
+import { decorateUrl } from '@/utils/urlUtils';
 
 const props = defineProps<{
   title: string;

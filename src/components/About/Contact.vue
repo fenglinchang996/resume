@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Contact } from '@/types/resumeContent';
-import { decorateUrl } from '@/utils/decorateUrl';
+import { decorateUrl } from '@/utils/urlUtils';
 
 defineProps<{ contact: Contact }>();
 </script>

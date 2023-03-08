@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { decorateUrl } from '@/utils/decorateUrl';
+import { decorateUrl } from '@/utils/urlUtils';
 import { computed } from 'vue';
 
 const props = defineProps<{

@@ -1,5 +1,5 @@
 import { test, expect } from 'vitest';
-import { decorateUrl } from './decorateUrl';
+import { decorateUrl } from './urlUtils';
 
 test('test decorateUrl', () => {
   const rawUrl = 'github.com';
