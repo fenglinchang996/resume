@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useThemeAppearanceStore } from '@/stores/themeAppearance';
 import { ThemeAppearance } from '@/constant/theme';
-import { ref, watch } from 'vue';
 
 const themeAppearanceStore = useThemeAppearanceStore();
 const { themeAppearance } = storeToRefs(themeAppearanceStore);
