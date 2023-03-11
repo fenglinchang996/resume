@@ -7,6 +7,10 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
+      coverage: {
+        all: true,
+        exclude: ['*.config.{js,ts}', '*.d.ts', '.eslintrc.cjs'],
+      },
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],
       root: fileURLToPath(new URL('./', import.meta.url)),
