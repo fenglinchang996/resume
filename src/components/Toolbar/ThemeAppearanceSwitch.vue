@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useThemeAppearanceStore } from '@/stores/themeAppearance';
 import { ThemeAppearance } from '@/constant/theme';
@@ -8,15 +7,13 @@ const themeAppearanceStore = useThemeAppearanceStore();
 const { themeAppearance } = storeToRefs(themeAppearanceStore);
 const { switchThemeAppearance } = themeAppearanceStore;
 
-const isDark = ref<boolean>(themeAppearance.value === ThemeAppearance.Dark);
-
-watch(isDark, (isDark) => {
-  isDark
-    ? switchThemeAppearance(ThemeAppearance.Dark)
-    : switchThemeAppearance(ThemeAppearance.Light);
-});
-
-const handleSwitch = () => (isDark.value = !isDark.value);
+const handleSwitch = () => {
+  if (themeAppearance.value === ThemeAppearance.Light) {
+    switchThemeAppearance(ThemeAppearance.Dark);
+  } else if (themeAppearance.value === ThemeAppearance.Dark) {
+    switchThemeAppearance(ThemeAppearance.Light);
+  }
+};
 </script>
 <template>
   <div class="flex items-center">

@@ -5,12 +5,6 @@ import { ThemeAppearance } from '@/constant/theme';
 import { useThemeAppearanceStore } from './themeAppearance';
 
 describe('Theme Appearance Store', () => {
-  const getPrefersColorSchemeSpy = vi
-    .spyOn(themeUtils, 'getPrefersColorScheme')
-    .mockReturnValue(undefined);
-  const getUserThemeAppearanceSpy = vi
-    .spyOn(themeUtils, 'getUserThemeAppearance')
-    .mockReturnValue(undefined);
   const setUserThemeAppearanceSpy = vi
     .spyOn(themeUtils, 'setUserThemeAppearance')
     .mockImplementation(() => undefined);
@@ -20,6 +14,7 @@ describe('Theme Appearance Store', () => {
   const setUserThemeAppearanceClassSpy = vi
     .spyOn(themeUtils, 'setThemeAppearanceClass')
     .mockImplementation(() => undefined);
+
   beforeEach(() => {
     setActivePinia(createPinia());
   });
@@ -31,8 +26,6 @@ describe('Theme Appearance Store', () => {
   test('default theme appearance', () => {
     const themeAppearanceStore = useThemeAppearanceStore();
 
-    expect(getUserThemeAppearanceSpy).toHaveBeenCalledOnce();
-    expect(getPrefersColorSchemeSpy).toHaveBeenCalledOnce();
     expect(themeAppearanceStore.themeAppearance).toBe(ThemeAppearance.Light);
   });
 

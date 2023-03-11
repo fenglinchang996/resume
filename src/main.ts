@@ -1,15 +1,28 @@
-import { createApp } from 'vue';
+// import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
 import App from './App.vue';
-import router from './router';
+import { routes } from './router';
+import { ViteSSG } from 'vite-ssg';
 
 import './assets/main.css';
 import '@fortawesome/fontawesome-free/css/all.css';
+import { useThemeAppearanceStore } from './stores/themeAppearance';
+import {
+  getPrefersColorScheme,
+  getUserThemeAppearance,
+} from './utils/themeUtils';
+import { ThemeAppearance } from './constant/theme';
 
-const app = createApp(App);
+export const createApp = ViteSSG(App, { routes }, ({ app, isClient }) => {
+  const pinia = createPinia();
+  app.use(pinia);
 
-app.use(createPinia());
-app.use(router);
-
-app.mount('#app');
+  if (isClient) {
+    const themeAppearanceStore = useThemeAppearanceStore();
+    themeAppearanceStore.themeAppearance =
+      getUserThemeAppearance() ||
+      getPrefersColorScheme() ||
+      ThemeAppearance.Light;
+  }
+});
