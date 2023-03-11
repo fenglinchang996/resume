@@ -1,10 +1,15 @@
-import { ThemeAppearance, USER_THEME_APPEARANCE_KEY } from '@/constant/theme';
+import {
+  ThemeAppearance,
+  USER_THEME_APPEARANCE_KEY,
+  PREFERS_COLOR_SCHEME_DARK,
+  PREFERS_COLOR_SCHEME_LIGHT,
+} from '@/constant/theme';
 
 // Get system default theme setting
 export function getPrefersColorScheme() {
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  if (window.matchMedia(PREFERS_COLOR_SCHEME_DARK).matches) {
     return ThemeAppearance.Dark;
-  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+  } else if (window.matchMedia(PREFERS_COLOR_SCHEME_LIGHT).matches) {
     return ThemeAppearance.Light;
   }
 }
