@@ -19,8 +19,9 @@ export function getUserThemeAppearance() {
   const userThemeAppearance = window.localStorage.getItem(
     USER_THEME_APPEARANCE_KEY
   );
-  if (userThemeAppearance === 'dark') return ThemeAppearance.Dark;
-  else if (userThemeAppearance === 'light') return ThemeAppearance.Light;
+  if (userThemeAppearance === ThemeAppearance.Dark) return ThemeAppearance.Dark;
+  else if (userThemeAppearance === ThemeAppearance.Light)
+    return ThemeAppearance.Light;
 }
 
 // If user selected theme appearance is not the same with system default,
@@ -29,15 +30,16 @@ export function setUserThemeAppearance(
   selectedThemeAppearance: ThemeAppearance
 ) {
   if (selectedThemeAppearance !== getPrefersColorScheme()) {
-    switch (selectedThemeAppearance) {
-      case ThemeAppearance.Dark:
-        window.localStorage.setItem(USER_THEME_APPEARANCE_KEY, 'dark');
-        break;
-      case ThemeAppearance.Light:
-        window.localStorage.setItem(USER_THEME_APPEARANCE_KEY, 'light');
-        break;
-      default:
-        break;
+    if (selectedThemeAppearance === ThemeAppearance.Dark) {
+      window.localStorage.setItem(
+        USER_THEME_APPEARANCE_KEY,
+        ThemeAppearance.Dark
+      );
+    } else if (selectedThemeAppearance === ThemeAppearance.Light) {
+      window.localStorage.setItem(
+        USER_THEME_APPEARANCE_KEY,
+        ThemeAppearance.Light
+      );
     }
   } else {
     window.localStorage.removeItem(USER_THEME_APPEARANCE_KEY);
