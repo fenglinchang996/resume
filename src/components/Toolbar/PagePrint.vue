@@ -4,6 +4,8 @@ const print = () => window.print();
 
 <template>
   <button
+    type="button"
+    title="Print"
     class="flex items-center text-xl text-gray-600 dark:text-gray-400"
     @click="print"
   >

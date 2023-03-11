@@ -21,6 +21,8 @@ const handleSwitch = () => (isDark.value = !isDark.value);
 <template>
   <div class="flex items-center">
     <button
+      type="button"
+      title="Switch Theme Appearance"
       class="flex items-center w-12 h-6 border border-gray-300 bg-gray-200 dark:bg-gray-700 shadow-lg rounded-full"
       @click="handleSwitch"
     >

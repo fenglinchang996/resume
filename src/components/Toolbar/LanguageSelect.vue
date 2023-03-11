@@ -14,7 +14,11 @@ function handleSelect(lang: Lang) {
 
 <template>
   <div class="relative group">
-    <button class="text-xl text-gray-600 dark:text-gray-400 pl-5">
+    <button
+      type="button"
+      title="Select Language"
+      class="text-xl text-gray-600 dark:text-gray-400 pl-5"
+    >
       <i class="fa-solid fa-globe"></i>
     </button>
     <div
@@ -25,6 +29,8 @@ function handleSelect(lang: Lang) {
       >
         <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
           <button
+            type="button"
+            :title="text"
             @click="() => handleSelect(value)"
             :disabled="language.value === value"
             :class="[
