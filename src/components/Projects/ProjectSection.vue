@@ -43,7 +43,7 @@ const endDateString = computed(() =>
       </div>
     </div>
     <div class="font-bold">{{ briefDescription }}</div>
-    <div class="my-2">
+    <div class="my-2 space-y-1">
       <div v-if="projectUrl" class="space-x-2">
         <span class="inline-block w-4 text-blue-400">
           <i class="fa-solid fa-link"></i>

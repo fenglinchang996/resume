@@ -7,8 +7,8 @@ defineProps<{ contact: Contact }>();
 
 <template>
   <div>
-    <ul class="md:flex md:space-x-3">
-      <li class="space-x-1">
+    <ul class="md:flex md:space-x-3 space-y-1 md:space-y-0">
+      <li class="space-x-2">
         <span class="inline-block w-4 h-4 text-[#ea4335] text-center">
           <i class="fa-solid fa-envelope"></i>
         </span>
@@ -16,7 +16,7 @@ defineProps<{ contact: Contact }>();
           {{ contact.email }}
         </a>
       </li>
-      <li class="space-x-1">
+      <li class="space-x-2">
         <span class="inline-block w-4 h-4 text-[#0072b1] text-center">
           <i class="fa-brands fa-linkedin"></i>
         </span>
@@ -24,7 +24,7 @@ defineProps<{ contact: Contact }>();
           {{ contact.linkedin }}
         </a>
       </li>
-      <li class="space-x-1">
+      <li class="space-x-2">
         <span
           class="inline-block w-4 h-4 text-[#333333] dark:text-neutral-300 text-center"
         >
