@@ -6,7 +6,7 @@ export const resumeContentEN: ResumeContent = {
     headline: 'Front-End Engineer',
     contact: {
       email: 'paulespling@gmail.com',
-      linkedin: 'www.linkedin.com/in/fenglinchang',
+      linkedin: 'linkedin.com/in/fenglinchang',
       github: 'github.com/fenglinchang996',
     },
     summary:
@@ -157,7 +157,7 @@ export const resumeContentZHT: ResumeContent = {
     headline: '前端工程師',
     contact: {
       email: 'paulespling@gmail.com',
-      linkedin: 'www.linkedin.com/in/fenglinchang',
+      linkedin: 'linkedin.com/in/fenglinchang',
       github: 'github.com/fenglinchang996',
     },
     summary:
