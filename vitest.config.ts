@@ -9,7 +9,7 @@ export default mergeConfig(
     test: {
       coverage: {
         all: true,
-        exclude: ['*.config.{js,ts}', '*.d.ts', '.eslintrc.cjs'],
+        exclude: ['*.config.{js,ts}', '*.d.ts', '.eslintrc.cjs', 'dist/**'],
       },
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],
