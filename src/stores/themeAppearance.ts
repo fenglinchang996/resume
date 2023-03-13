@@ -1,7 +1,9 @@
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { defineStore } from 'pinia';
 import { ThemeAppearance } from '@/constant/theme';
 import {
+  getPrefersColorScheme,
+  getUserThemeAppearance,
   setThemeAppearanceClass,
   setUserThemeAppearance,
   triggerThemeAppearanceTransition,
@@ -18,6 +20,13 @@ export const useThemeAppearanceStore = defineStore('themeAppearance', () => {
       setUserThemeAppearance(selectedThemeAppearance);
     }
   }
+
+  onMounted(() => {
+    themeAppearance.value =
+      getUserThemeAppearance() ||
+      getPrefersColorScheme() ||
+      ThemeAppearance.Light;
+  });
 
   return {
     themeAppearance,
