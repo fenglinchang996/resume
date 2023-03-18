@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue';
+import { ref, watch } from 'vue';
 import { Lang, LANGUAGE_OPTIONS } from '@/constant/language';
 import { useLanguageStore } from '@/stores/language';
 import { storeToRefs } from 'pinia';
@@ -10,8 +10,8 @@ import MenubarItem from './MenubarItem.vue';
 const isMenubarShown = ref(false);
 const toggleMenubar = () => (isMenubarShown.value = !isMenubarShown.value);
 
-watchEffect(() => {
-  if (isMenubarShown.value) {
+watch(isMenubarShown, (isMenubarShown) => {
+  if (isMenubarShown) {
     disablePageScroll();
   } else {
     enablePageScroll();
