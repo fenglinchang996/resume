@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import LanguageSelect from './LanguageSelect.vue';
 import PagePrint from './PagePrint.vue';
-import ThemeAppearanceSwitch from './ThemeAppearanceSwitch.vue';
+import ThemeAppearanceSwitch from '@/components/common/ThemeAppearanceSwitch.vue';
 </script>
 
 <template>

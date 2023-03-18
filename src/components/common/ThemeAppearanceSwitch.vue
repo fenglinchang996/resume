@@ -24,7 +24,7 @@ const handleSwitch = () => {
       @click="handleSwitch"
     >
       <span
-        class="inline-block w-5 h-5 text-sm bg-white rounded-full dark:bg-gray-900 dark:translate-x-[26px] duration-500"
+        class="inline-block w-5 h-5 text-sm bg-white rounded-full dark:bg-gray-900 dark:translate-x-[26px] duration-300"
       >
         <span class="text-gray-600 dark:hidden">
           <i class="fa-regular fa-sun"></i>

@@ -3,7 +3,7 @@ import { shallowMount } from '@vue/test-utils';
 import Toolbar from './index.vue';
 import LanguageSelect from './LanguageSelect.vue';
 import PagePrint from './PagePrint.vue';
-import ThemeAppearanceSwitch from './ThemeAppearanceSwitch.vue';
+import ThemeAppearanceSwitch from '@/components/common/ThemeAppearanceSwitch.vue';
 
 describe('Toolbar component', () => {
   const wrapper = shallowMount(Toolbar);

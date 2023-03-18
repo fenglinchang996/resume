@@ -33,6 +33,7 @@ function handleSelect(lang: Lang) {
             :title="text"
             @click="() => handleSelect(value)"
             :disabled="language.value === value"
+            class="w-full text-start"
             :class="[
               language.value === value
                 ? 'text-gray-700 dark:text-gray-300 font-bold'
