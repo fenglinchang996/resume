@@ -41,10 +41,10 @@ const print = () => window.print();
       <i class="fa-solid fa-bars"></i>
     </button>
     <div
-      class="fixed inset-0 px-6 py-4 bg-neutral-200 dark:bg-neutral-700 transition-all duration-300"
+      class="fixed inset-0 px-6 py-4 transition-all duration-300"
       :class="
         isMenubarShown
-          ? 'visible bg-opacity-70 backdrop-blur'
+          ? 'visible bg-opacity-70 backdrop-blur bg-neutral-200 dark:bg-neutral-700'
           : 'invisible bg-opacity-0'
       "
     >
