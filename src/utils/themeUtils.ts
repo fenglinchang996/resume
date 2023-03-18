@@ -61,5 +61,5 @@ export function setThemeAppearanceClass(
 }
 
 export function triggerThemeAppearanceTransition() {
-  window.document.body.classList.add('transition-all', 'duration-500');
+  window.document.body.classList.add('transition-all', 'duration-300');
 }

@@ -129,7 +129,7 @@ describe('theme utilities', () => {
       expect(window.document.body.classList.contains('transition-all')).toBe(
         true
       );
-      expect(window.document.body.classList.contains('duration-500')).toBe(
+      expect(window.document.body.classList.contains('duration-300')).toBe(
         true
       );
     });
