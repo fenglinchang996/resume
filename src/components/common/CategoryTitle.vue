@@ -4,5 +4,5 @@ defineProps<{ title: string }>();
 
 <template>
   <h2 class="text-2xl font-bold">{{ title.toUpperCase() }}</h2>
-  <hr class="mb-3 border-black dark:border-neutral-300 border-t-2" />
+  <hr class="mb-3 border-neutral-400 border-t-1" />
 </template>

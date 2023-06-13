@@ -7,7 +7,7 @@ defineProps<{ contact: Contact }>();
 
 <template>
   <div>
-    <ul class="md:flex md:space-x-3 space-y-1 md:space-y-0">
+    <ul class="space-y-2 whitespace-nowrap">
       <li class="space-x-2">
         <span class="inline-block w-4 h-4 text-[#ea4335] text-center">
           <i class="fa-solid fa-envelope"></i>

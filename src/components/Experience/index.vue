@@ -15,7 +15,7 @@ const otherExperience = computed(() => content.value.otherExperience);
 <template>
   <CategoryBlock>
     <CategoryTitle title="Work Experience" />
-    <div class="space-y-3">
+    <div class="space-y-5">
       <ExperienceSection
         v-for="{
           title,
@@ -40,7 +40,7 @@ const otherExperience = computed(() => content.value.otherExperience);
   </CategoryBlock>
   <CategoryBlock>
     <CategoryTitle title="Other Experience" />
-    <div class="space-y-3">
+    <div class="space-y-6">
       <ExperienceSection
         v-for="{
           title,

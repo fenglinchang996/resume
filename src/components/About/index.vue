@@ -13,10 +13,14 @@ const about = computed(() => content.value.about);
 
 <template>
   <article class="space-y-4">
-    <div class="space-y-3 print:flex print:justify-between print:space-y-0">
+    <div>
       <Title :name="about.name" :headline="about.headline"></Title>
+    </div>
+    <div
+      class="flex flex-col-reverse md:flex-row print:flex-row md:justify-between print:justify-between gap-x-20 gap-y-6"
+    >
+      <Summary :summary="about.summary"></Summary>
       <Contact :contact="about.contact" />
     </div>
-    <Summary :summary="about.summary"></Summary>
   </article>
 </template>

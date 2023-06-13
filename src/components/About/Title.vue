@@ -6,12 +6,12 @@ defineProps<{
 </script>
 
 <template>
-  <div class="md:flex md:space-x-4 md:items-center">
+  <div class="space-y-1 md:flex gap-x-4 items-center print:flex">
     <h1>
-      <span class="text-2xl font-bold">{{ name }}</span>
+      <span class="text-3xl font-bold">{{ name }}</span>
     </h1>
     <h2>
-      <span class="text-xl">{{ headline }}</span>
+      <span class="text-2xl">{{ headline }}</span>
     </h2>
   </div>
 </template>

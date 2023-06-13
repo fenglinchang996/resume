@@ -14,7 +14,7 @@ const projects = computed(() => content.value.projects);
 <template>
   <CategoryBlock>
     <CategoryTitle title="Projects" />
-    <div class="space-y-3">
+    <div class="space-y-5">
       <ProjectSection
         v-for="project of projects"
         :key="project.title"

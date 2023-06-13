@@ -9,14 +9,14 @@ defineProps<{
 </script>
 
 <template>
-  <section class="flex-column md:flex print:flex justify-between">
+  <section class="space-y-1">
+    <div class="text-sm text-gray-600 dark:text-gray-400">
+      {{ startDate.getFullYear() }} - {{ endDate?.getFullYear() || 'Present' }}
+    </div>
     <div>
       <h3 class="text-lg font-bold">{{ school }}</h3>
       <div>{{ degree }}</div>
       <div>{{ fieldOfStudy }}</div>
-    </div>
-    <div class="text-gray-600 dark:text-gray-400">
-      {{ startDate.getFullYear() }} - {{ endDate?.getFullYear() || 'Present' }}
     </div>
   </section>
 </template>

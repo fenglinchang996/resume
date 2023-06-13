@@ -30,18 +30,13 @@ const endDateString = computed(() =>
 </script>
 
 <template>
-  <section>
-    <div class="flex justify-between items-center">
-      <h3 class="flex items-center">
-        <span class="w-5 text-left text-red-400">
-          <i class="fa-solid fa-folder"></i>
-        </span>
-        <span class="mx-1 text-lg font-bold">{{ title }}</span>
-      </h3>
-      <div class="text-gray-600 dark:text-gray-400">
-        {{ startDateString }} - {{ endDateString }}
-      </div>
+  <section class="space-y-1">
+    <div class="text-sm text-gray-600 dark:text-gray-400">
+      {{ startDateString }} - {{ endDateString }}
     </div>
+    <h3 class="flex items-center">
+      <span class="text-lg font-bold">{{ title }}</span>
+    </h3>
     <div class="font-bold">{{ briefDescription }}</div>
     <div class="my-2 space-y-1">
       <div v-if="projectUrl" class="space-x-2">
@@ -83,13 +78,14 @@ const endDateString = computed(() =>
         {detailedDescription}
       </p>
     </div>
-    <div v-if="skills && skills.length > 0" class="my-1 flex gap-1">
-      <span class="inline-block w-4 text-gray-600 dark:text-gray-400">
-        <i class="fa-solid fa-screwdriver-wrench"></i>
+    <div v-if="skills && skills.length > 0" class="pt-1 flex flex-wrap gap-2">
+      <span
+        v-for="skill of skills"
+        :key="skill"
+        class="text-sm whitespace-nowrap text-gray-600 dark:text-gray-400 border-2 rounded-lg border-gray-600 dark:border-gray-400 px-1"
+      >
+        {{ skill }}
       </span>
-      <div>
-        <span class="font-medium">Skills</span>: {{ skills.join(', ') }}
-      </div>
     </div>
   </section>
 </template>

@@ -14,7 +14,7 @@ const educationList = computed(() => content.value.education);
 <template>
   <CategoryBlock>
     <CategoryTitle title="Education" />
-    <div class="space-y-3">
+    <div class="space-y-5">
       <EducationSection
         v-for="{
           school,
