@@ -30,7 +30,7 @@ const print = () => window.print();
 </script>
 
 <template>
-  <div class="relative">
+  <div>
     <button
       type="button"
       title="Menubar"
@@ -40,14 +40,16 @@ const print = () => window.print();
     >
       <i class="fa-solid fa-bars"></i>
     </button>
-    <div
-      class="fixed inset-0 px-6 py-4 transition-all duration-300"
-      :class="
-        isMenubarShown
-          ? 'visible bg-opacity-70 backdrop-blur bg-neutral-200 dark:bg-neutral-700'
-          : 'invisible bg-opacity-0'
-      "
-    >
+    <div class="fixed inset-0 px-6 py-4">
+      <div
+        class="absolute inset-0 transition-all duration-300"
+        :class="
+          isMenubarShown
+            ? 'visible bg-opacity-70 backdrop-blur bg-neutral-200 dark:bg-neutral-700'
+            : 'invisible bg-opacity-0'
+        "
+        @click="toggleMenubar"
+      ></div>
       <button
         type="button"
         title="Close Menubar"
