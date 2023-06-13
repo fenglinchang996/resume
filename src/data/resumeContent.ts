@@ -10,7 +10,7 @@ export const resumeContentEN: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      'Front-end engineer with 2+ years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Vue, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
+      'Front-end engineer with 3 years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Vue, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
   },
   skills: [
     {
@@ -50,9 +50,9 @@ export const resumeContentEN: ResumeContent = {
       skills: [
         'React',
         'Redux',
-        'styled-components',
         'TypeScript',
         'AngularJS',
+        'styled-components',
       ],
     },
     {
@@ -80,7 +80,7 @@ export const resumeContentEN: ResumeContent = {
       company: { name: 'WeHelp', url: 'https://training.pada-x.com/wehelp' },
       startDate: new Date(2021, 11),
       location: 'Taipei City, Taiwan',
-      description: 'Mentored 25+ trainees to become junior front-end engineers',
+      description: 'Mentored 50+ trainees to become junior front-end engineers',
       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'AWS EC2'],
     },
     {
@@ -161,7 +161,7 @@ export const resumeContentZHT: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '兩年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Vue、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
+      '三年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Vue、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
   },
   skills: [
     {
@@ -200,9 +200,9 @@ export const resumeContentZHT: ResumeContent = {
       skills: [
         'React',
         'Redux',
-        'styled-components',
         'TypeScript',
         'AngularJS',
+        'styled-components',
       ],
     },
     {
@@ -228,7 +228,7 @@ export const resumeContentZHT: ResumeContent = {
       company: { name: 'WeHelp', url: 'https://training.pada-x.com/wehelp' },
       startDate: new Date(2021, 11),
       location: '台灣台北市',
-      description: '協助輔導 25 位以上前端學員轉職成為初階前端工程師',
+      description: '協助輔導 50 位以上前端學員轉職成為初階前端工程師',
       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'AWS EC2'],
     },
     {
