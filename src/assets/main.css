@@ -8,7 +8,7 @@ body {
 
 @media print {
   body {
-    zoom: 70%;
+    zoom: 66%;
   }
   @page {
     size: A4;
