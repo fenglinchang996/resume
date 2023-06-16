@@ -6,6 +6,9 @@ import Project from '@/components/Projects/index.vue';
 import Education from '@/components/Education/index.vue';
 import Menubar from '@/components/Menubar/index.vue';
 import Toolbar from '@/components/Toolbar/index.vue';
+import { useInitializeThemeAppearance } from '@/composables/useInitializeThemeAppearance';
+
+useInitializeThemeAppearance();
 </script>
 
 <template>

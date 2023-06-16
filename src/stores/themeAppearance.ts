@@ -21,13 +21,6 @@ export const useThemeAppearanceStore = defineStore('themeAppearance', () => {
     }
   }
 
-  onMounted(() => {
-    themeAppearance.value =
-      getUserThemeAppearance() ||
-      getPrefersColorScheme() ||
-      ThemeAppearance.Light;
-  });
-
   return {
     themeAppearance,
     switchThemeAppearance,

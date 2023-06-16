@@ -1,18 +1,10 @@
-import { defineComponent } from 'vue';
-import { setActivePinia, createPinia, storeToRefs } from 'pinia';
+import { setActivePinia, createPinia } from 'pinia';
 import { describe, test, expect, beforeEach, vi, afterEach } from 'vitest';
-import { flushPromises, mount } from '@vue/test-utils';
 import * as themeUtils from '@/utils/themeUtils';
 import { ThemeAppearance } from '@/constant/theme';
 import { useThemeAppearanceStore } from './themeAppearance';
 
 describe('Theme Appearance Store', () => {
-  const getUserThemeAppearanceSpy = vi
-    .spyOn(themeUtils, 'getUserThemeAppearance')
-    .mockImplementation(() => undefined);
-  const getPrefersColorSchemeSpy = vi
-    .spyOn(themeUtils, 'getPrefersColorScheme')
-    .mockImplementation(() => undefined);
   const setUserThemeAppearanceSpy = vi
     .spyOn(themeUtils, 'setUserThemeAppearance')
     .mockImplementation(() => undefined);
@@ -35,25 +27,6 @@ describe('Theme Appearance Store', () => {
     const themeAppearanceStore = useThemeAppearanceStore();
 
     expect(themeAppearanceStore.themeAppearance).toBe(ThemeAppearance.Light);
-  });
-
-  test('get theme appearance when component mounted', async () => {
-    getPrefersColorSchemeSpy.mockImplementation(() => ThemeAppearance.Dark);
-    const TestComponent = defineComponent({
-      setup() {
-        const themeAppearanceStore = useThemeAppearanceStore();
-        const { themeAppearance } = storeToRefs(themeAppearanceStore);
-        return {
-          themeAppearance,
-        };
-      },
-    });
-    const wrapper = mount(TestComponent);
-
-    await flushPromises();
-    expect(getUserThemeAppearanceSpy).toHaveBeenCalledOnce();
-    expect(getPrefersColorSchemeSpy).toHaveBeenCalledOnce();
-    expect(wrapper.vm.themeAppearance).toBe(ThemeAppearance.Dark);
   });
 
   test('switch theme appearance', () => {
