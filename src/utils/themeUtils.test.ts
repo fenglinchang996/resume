@@ -1,10 +1,10 @@
+import { describe, test, expect, vi, afterAll, afterEach } from 'vitest';
 import {
   PREFERS_COLOR_SCHEME_DARK,
   PREFERS_COLOR_SCHEME_LIGHT,
   ThemeAppearance,
   USER_THEME_APPEARANCE_KEY,
 } from '@/constant/theme';
-import { describe, test, expect, vi, afterAll, afterEach } from 'vitest';
 import {
   getPrefersColorScheme,
   getUserThemeAppearance,
