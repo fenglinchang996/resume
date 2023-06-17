@@ -9,7 +9,7 @@ describe('LanguageSelect component', () => {
   test('test selecting language', async () => {
     const wrapper = mount(LanguageSelect, {
       global: {
-        plugins: [createTestingPinia({ stubActions: false, createSpy: vi.fn })],
+        plugins: [createTestingPinia({ stubActions: false })],
       },
     });
     const list = wrapper.get('ul');
