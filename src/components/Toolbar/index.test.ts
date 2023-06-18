@@ -7,9 +7,9 @@ import ThemeAppearanceSwitch from '@/components/common/ThemeAppearanceSwitch.vue
 
 describe('Toolbar component', () => {
   const wrapper = mount(Toolbar, { shallow: true });
-  test('child component', () => {
-    expect(wrapper.findComponent(LanguageSelect)).toBeDefined();
-    expect(wrapper.findComponent(PagePrint)).toBeDefined();
-    expect(wrapper.findComponent(ThemeAppearanceSwitch)).toBeDefined;
+  test('should renders the child component', () => {
+    expect(wrapper.getComponent(LanguageSelect)).toBeDefined();
+    expect(wrapper.getComponent(PagePrint)).toBeDefined();
+    expect(wrapper.getComponent(ThemeAppearanceSwitch)).toBeDefined;
   });
 });
