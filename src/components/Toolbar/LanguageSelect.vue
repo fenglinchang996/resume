@@ -17,9 +17,9 @@ function handleSelect(lang: Lang) {
     <button
       type="button"
       title="Select Language"
-      class="text-xl text-gray-600 dark:text-gray-400 pl-5"
+      class="text-2xl text-gray-600 dark:text-gray-400 pl-5"
     >
-      <i class="fa-solid fa-globe"></i>
+      <i class="fa-solid fa-language"></i>
     </button>
     <div
       class="invisible opacity-0 translate-y-[-4px] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all"

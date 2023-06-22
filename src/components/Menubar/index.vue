@@ -74,7 +74,9 @@ const print = () => window.print();
                   : 'Translations'
               }}
             </span>
-            <i class="fa-solid fa-globe"></i>
+            <span class="text-lg">
+              <i class="fa-solid fa-language"></i>
+            </span>
           </div>
           <ul class="my-3 space-y-2">
             <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
