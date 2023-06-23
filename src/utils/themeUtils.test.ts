@@ -13,7 +13,7 @@ import {
   triggerThemeAppearanceTransition,
 } from './themeUtils';
 
-describe('theme utilities', () => {
+describe('test theme utilities', () => {
   let prefersColorSchemeQuery = '';
   const matchMediaMock = vi.fn().mockImplementation((query) => ({
     matches: query === prefersColorSchemeQuery,
@@ -24,6 +24,7 @@ describe('theme utilities', () => {
     matchMediaMock.mockClear();
     prefersColorSchemeQuery = '';
   });
+
   afterAll(() => {
     vi.unstubAllGlobals();
   });
