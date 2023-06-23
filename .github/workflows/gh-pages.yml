@@ -1,6 +1,6 @@
 # Workflow for building and deploying the site to GitHub Pages
 
-name: Deploy github pages
+name: Deploy Github Pages
 
 on:
   # Runs on pushes targeting the default branch
