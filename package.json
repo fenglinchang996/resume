@@ -9,6 +9,7 @@
     "test:unit": "vitest --coverage",
     "test:unit:all": "vitest run --coverage",
     "test:e2e": "playwright test",
+    "test:e2e:show-report": "playwright show-report",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
