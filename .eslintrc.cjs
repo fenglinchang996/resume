@@ -8,6 +8,12 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-typescript',
   ],
+  overrides: [
+    {
+      files: ['e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'],
+      extends: ['plugin:playwright/recommended'],
+    },
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
   },
