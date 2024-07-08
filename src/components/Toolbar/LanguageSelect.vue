@@ -17,7 +17,7 @@ function handleSelect(lang: Lang) {
     <button
       type="button"
       title="Select Language"
-      class="text-2xl text-gray-600 dark:text-gray-400 pl-5"
+      class="text-2xl text-gray-600 dark:text-gray-400"
     >
       <i class="fa-solid fa-language"></i>
     </button>

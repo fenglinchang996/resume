@@ -1,9 +1,7 @@
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import { defineStore } from 'pinia';
 import { ThemeAppearance } from '@/constant/theme';
 import {
-  getPrefersColorScheme,
-  getUserThemeAppearance,
   setThemeAppearanceClass,
   setUserThemeAppearance,
   triggerThemeAppearanceTransition,
