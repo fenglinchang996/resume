@@ -12,7 +12,7 @@ const projects = computed(() => content.value.projects);
 </script>
 
 <template>
-  <CategoryBlock>
+  <CategoryBlock v-if="projects.length !== 0">
     <CategoryTitle title="Projects" />
     <div class="space-y-5">
       <ProjectSection
