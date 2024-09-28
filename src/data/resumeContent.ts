@@ -10,7 +10,7 @@ export const resumeContentEN: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      'Front-end engineer with 3 years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Vue, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
+      'Front-end engineer with 4 years experience developing and maintaining responsive websites. Familiar with web development basics: HTML, CSS and JavaScript. Also experienced in modern front-end frameworks and libraries, such as React, Vue, TypeScript and styled-components. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
   },
   skills: [
     {
@@ -23,7 +23,15 @@ export const resumeContentEN: ResumeContent = {
     },
     {
       title: 'Front-End Tooling',
-      skillList: ['NPM / PNPM', 'Webpack', 'Vite', 'ESLint'],
+      skillList: ['npm / pnpm', 'Webpack', 'Vite', 'ESLint'],
+    },
+    {
+      title: 'Front-End Testing',
+      skillList: ['Jest'],
+    },
+    {
+      title: 'Other',
+      skillList: ['Vim / Neovim'],
     },
   ],
   workExperience: [
@@ -34,7 +42,7 @@ export const resumeContentEN: ResumeContent = {
       location: 'Taipei City, Taiwan',
       description:
         'Developed front-end part of ASUS xHIS Platform, the next generation intelligence platform for hospital information system',
-      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript'],
+      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript', 'Jest'],
     },
     {
       title: 'Front-End Engineer',
@@ -97,42 +105,7 @@ export const resumeContentEN: ResumeContent = {
       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Webpack', 'Firebase'],
     },
   ],
-  projects: [
-    {
-      title: 'MetaBus',
-      briefDescription:
-        'A web service providing information about Taiwan buses, including live bus timetables, bus route maps, and nearby stops / routes',
-      startDate: new Date(2021, 10),
-      endDate: new Date(2021, 10),
-      repoUrl: 'github.com/super996programmer/meta-bus',
-      skills: [
-        'React',
-        'styled-components',
-        'TypeScript',
-        'Webpack',
-        'Google Maps API',
-      ],
-    },
-    {
-      title: 'MindNote',
-      briefDescription:
-        'A web tool for organizing ideas with mind mapping and note taking',
-      startDate: new Date(2020, 6),
-      endDate: new Date(2020, 7),
-      projectUrl: 'mindnote-f39e9.web.app',
-      repoUrl: 'github.com/fenglinchang996/MindNote',
-      skills: ['React', 'Webpack', 'SVG', 'Firebase'],
-    },
-    {
-      title: 'STYLiSH',
-      briefDescription: 'An e-commerce website for fascinating clothes',
-      startDate: new Date(2020, 4),
-      endDate: new Date(2020, 5),
-      projectUrl: 'fenglinchang996.github.io/Stylish',
-      repoUrl: 'github.com/fenglinchang996/Stylish',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-    },
-  ],
+  projects: [],
   education: [
     {
       school: 'National Taiwan University',
@@ -161,7 +134,7 @@ export const resumeContentZHT: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '三年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Vue、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
+      '四年前端開發經驗，熟悉網頁開發基本技術：HTML、CSS 與 JavaScript，也有使用前端框架與工具的經驗，例如：React、Vue、TypeScript、Webpack 與 styled-components 等等。對新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
   },
   skills: [
     {
@@ -174,7 +147,15 @@ export const resumeContentZHT: ResumeContent = {
     },
     {
       title: '前端工具',
-      skillList: ['NPM / PNPM', 'Webpack', 'Vite', 'ESLint'],
+      skillList: ['npm / pnpm', 'Webpack', 'Vite', 'ESLint'],
+    },
+    {
+      title: '前端測試',
+      skillList: ['Jest'],
+    },
+    {
+      title: '其它',
+      skillList: ['Vim / Neovim'],
     },
   ],
   workExperience: [
@@ -184,7 +165,7 @@ export const resumeContentZHT: ResumeContent = {
       startDate: new Date(2022, 9),
       location: '台灣台北市',
       description: '開發 ASUS xHIS Platform 次世代智慧醫療資訊平台',
-      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript'],
+      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript', 'Jest'],
     },
     {
       title: '前端工程師',
@@ -245,41 +226,7 @@ export const resumeContentZHT: ResumeContent = {
       skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Webpack', 'Firebase'],
     },
   ],
-  projects: [
-    {
-      title: 'MetaBus',
-      briefDescription:
-        '提供台灣公車動態資訊，包括公車時刻、公車路線地圖與鄰近站牌 / 路線等等',
-      startDate: new Date(2021, 10),
-      endDate: new Date(2021, 10),
-      repoUrl: 'github.com/super996programmer/meta-bus',
-      skills: [
-        'React',
-        'styled-components',
-        'TypeScript',
-        'Webpack',
-        'Google Maps API',
-      ],
-    },
-    {
-      title: 'MindNote',
-      briefDescription: '繪製心智圖與筆記的線上工具',
-      startDate: new Date(2020, 6),
-      endDate: new Date(2020, 7),
-      projectUrl: 'mindnote-f39e9.web.app',
-      repoUrl: 'github.com/fenglinchang996/MindNote',
-      skills: ['React', 'Webpack', 'SVG', 'Firebase'],
-    },
-    {
-      title: 'STYLiSH',
-      briefDescription: '線上潮流衣服購物網站',
-      startDate: new Date(2020, 4),
-      endDate: new Date(2020, 5),
-      projectUrl: 'fenglinchang996.github.io/Stylish',
-      repoUrl: 'github.com/fenglinchang996/Stylish',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-    },
-  ],
+  projects: [],
   education: [
     {
       school: '國立台灣大學',
