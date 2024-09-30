@@ -8,13 +8,13 @@ import ExperienceSection from './ExperienceSection.vue';
 
 const resumeContentStore = useResumeContentStore();
 const { content } = storeToRefs(resumeContentStore);
-const workExperience = computed(() => content.value.workExperience);
+const otherExperience = computed(() => content.value.otherExperience);
 </script>
 
 <template>
   <CategoryBlock>
-    <CategoryTitle title="Work Experience" />
-    <div class="space-y-5">
+    <CategoryTitle title="Other Experience" />
+    <div class="space-y-6">
       <ExperienceSection
         v-for="{
           title,
@@ -24,7 +24,7 @@ const workExperience = computed(() => content.value.workExperience);
           location,
           description,
           skills,
-        } of workExperience"
+        } of otherExperience"
         :key="`${company.name}-${title}`"
         :title="title"
         :company-name="company.name"

@@ -15,14 +15,11 @@ const skills = computed(() => content.value.skills);
   <CategoryBlock>
     <CategoryTitle title="Skills" />
     <div
-      class="space-y-3 md:flex md:justify-between md:space-y-0 lg:flex-col lg:gap-3"
+      class="space-y-3 md:space-y-0 md:grid md:grid-cols-3 md:gap-3 lg:flex lg:flex-col"
     >
-      <SkillSection
-        v-for="{ title, skillList } of skills"
-        :key="title"
-        :title="title"
-        :skill-list="skillList"
-      />
+      <div v-for="{ title, skillList } of skills" :key="title">
+        <SkillSection :title="title" :skill-list="skillList" />
+      </div>
     </div>
   </CategoryBlock>
 </template>

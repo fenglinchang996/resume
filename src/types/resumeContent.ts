@@ -20,6 +20,11 @@ export type Skill = {
   skillList: string[];
 };
 
+export type ExperienceDescription = {
+  title: string;
+  children?: ExperienceDescription[];
+};
+
 export type Experience = {
   title: string;
   company: {
@@ -28,8 +33,8 @@ export type Experience = {
   };
   startDate: Date;
   endDate?: Date;
-  location: string;
-  description: string | string[];
+  location?: string;
+  description: ExperienceDescription[];
   skills?: string[];
 };
 

@@ -1,5 +1,5 @@
 <template>
-  <article class="my-6">
+  <article>
     <slot></slot>
   </article>
 </template>

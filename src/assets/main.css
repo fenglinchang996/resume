@@ -1,9 +1,9 @@
 @media print {
   body {
-    zoom: 66%;
+    zoom: 70%;
   }
   @page {
     size: A4;
-    margin: 4mm 0;
+    margin: 4mm;
   }
 }
