@@ -13,13 +13,13 @@ describe('Experience component', () => {
       },
     });
 
-    const titleTexts = ['WORK EXPERIENCE', 'OTHER EXPERIENCE'];
+    const titleTexts = ['WORK EXPERIENCE'];
     const titleComponents = wrapper.findAll('h2');
 
     expect(
       titleTexts.every((text) =>
-        titleComponents.some((component) => component.text() === text)
-      )
+        titleComponents.some((component) => component.text() === text),
+      ),
     ).toBe(true);
   });
 });

@@ -11,7 +11,7 @@ describe('CategoryBlock component', () => {
     });
 
     expect(wrapper.html()).toBe(
-      '<article class="my-6">\n' + '  <div>test</div>\n' + '</article>'
+      '<article>\n' + '  <div>test</div>\n' + '</article>',
     );
   });
 });
