@@ -30,7 +30,7 @@ useInitializeThemeAppearance();
       <Education />
     </div>
     <!-- desktop -->
-    <div class="lg:grid print:grid grid-cols-3 gap-8">
+    <div class="hidden lg:grid print:grid grid-cols-3 gap-8">
       <div class="space-y-6 grid-col-start-1 grid-col-end-2">
         <Skills />
         <Education />
