@@ -61,7 +61,7 @@ export const resumeContentEN: ResumeContent = {
           children: [
             {
               title:
-                'Established core features for (Outpatient Department) OPD and ER services, These include developing Hospital Rules, Exam / Pathology Reports, and Patient Information Settings',
+                'Established core features for Outpatient Department (OPD) and Emergency Room (ER) services. These include developing Hospital Rules, Exam / Pathology Reports, and Patient Information Settings',
             },
             {
               title:
@@ -91,7 +91,7 @@ export const resumeContentEN: ResumeContent = {
             },
             {
               title:
-                'Refactored the in-house UI component library to provide more flexible, user-friendly, and powerful UI components',
+                'Refactored the in-house UI library to provide more flexible, user-friendly, and powerful UI components',
             },
           ],
         },
