@@ -43,7 +43,11 @@ const endDateString = computed(() =>
     <h3 class="text-lg font-bold">
       <div>
         <span>
-          <a v-if="companyUrl" :href="decorateUrl(companyUrl)">
+          <a
+            v-if="companyUrl"
+            class="underline underline-offset-2"
+            :href="decorateUrl(companyUrl)"
+          >
             {{ companyName }}
           </a>
           <span v-else>{{ companyName }}</span>
