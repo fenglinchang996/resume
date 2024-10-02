@@ -57,7 +57,7 @@ export const resumeContentEN: ResumeContent = {
       description: [
         {
           title:
-            'Develop ASUS xHIS, the next-gen healthcare information platform',
+            'Developed ASUS next-gen healthcare information platform (ASUS xHIS Platform)',
           children: [
             {
               title:
@@ -70,7 +70,7 @@ export const resumeContentEN: ResumeContent = {
           ],
         },
         {
-          title: 'Built xHIS front-end log system',
+          title: 'Built the log system for xHIS front-end ',
           children: [
             {
               title:
@@ -78,16 +78,16 @@ export const resumeContentEN: ResumeContent = {
             },
             {
               title:
-                'Monitored and analyzed xHIS front-end logs to ensure compliance with Service Level Agreement (SLA) and to observe various Key Metrics',
+                'Monitored and analyzed xHIS front-end logs to ensure compliance with Service Level Agreement (SLA) and to observe various Key Metrics (such as MAR and MAU)',
             },
           ],
         },
         {
-          title: 'Optimized the xHIS front-end development experience',
+          title: 'Optimized the development experience of xHIS front-end ',
           children: [
             {
               title:
-                'Introduced Atomic CSS design concept with implementation of UnoCSS to reduce the usage of complex styles and improve the efficiency of front-end development',
+                'Introduced Atomic CSS design concept with implementation of UnoCSS to reduce the usage of complex styles, improving the efficiency of front-end development',
             },
             {
               title:
@@ -96,7 +96,15 @@ export const resumeContentEN: ResumeContent = {
           ],
         },
       ],
-      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript', 'UnoCSS', 'Jest'],
+      skills: [
+        'Vue',
+        'Pinia',
+        'TypeScript',
+        'UnoCSS',
+        'Jest',
+        'Azure Application Insights',
+        'Azure Log Analytics',
+      ],
     },
     {
       title: 'Front-End Engineer',
@@ -172,7 +180,7 @@ export const resumeContentEN: ResumeContent = {
         },
         {
           title:
-            'Completed the assigned project STYLiSH in 3 weeks to practice programming skills and problem-solving thoughts',
+            'Completed the assigned project in 3 weeks to practice programming skills and problem-solving thoughts',
         },
         {
           title:
@@ -210,7 +218,7 @@ export const resumeContentZHT: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '擁有四年前端開發經驗，熟悉網頁開發基本技術，以及具備使用前端框架與工具的經驗，例如：React、Vue、TypeScript 等等。對開發產品與新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
+      '擁有四年前端開發經驗，熟悉網頁開發基本技術，以及具備使用前端框架與工具的經驗，例如：React、Vue、TypeScript 等等。本科為化學工程領域，轉職為前端工程師後，參與過電商 SaaS 與醫療系統的開發，對打造產品與研究新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
   },
   skills: [
     {
@@ -276,7 +284,7 @@ export const resumeContentZHT: ResumeContent = {
             },
             {
               title:
-                '使用 Grafana 與 Log Analytics 對 xHIS 前端日誌進行監控與分析，確認是否滿足服務級別協定（SLA），並用於觀測各項服務關鍵指標（Key Metrics）',
+                '使用 Grafana 與 Log Analytics 對 xHIS 前端日誌進行監控與分析，確認是否滿足服務級別協定（SLA），並用於觀測各項服務關鍵指標（Key Metrics，例如 MAR 或 MAU）',
             },
           ],
         },
@@ -293,7 +301,15 @@ export const resumeContentZHT: ResumeContent = {
           ],
         },
       ],
-      skills: ['Vue', 'Vue Router', 'Pinia', 'TypeScript', 'UnoCSS', 'Jest'],
+      skills: [
+        'Vue',
+        'Pinia',
+        'TypeScript',
+        'UnoCSS',
+        'Jest',
+        'Azure Application Insights',
+        'Azure Log Analytics',
+      ],
     },
     {
       title: '前端工程師',
@@ -362,8 +378,7 @@ export const resumeContentZHT: ResumeContent = {
             '學習前端開發知識與技術，例如：HTML、CSS、JavaScript、Webpack 與 React 等等',
         },
         {
-          title:
-            '透過三週內完成指定專案 STYLiSH，練習程式開發技巧與解決問題思維',
+          title: '透過三週內完成指定專案，練習程式開發技巧與解決問題思維',
         },
         {
           title:
