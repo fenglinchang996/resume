@@ -14,7 +14,7 @@ defineProps<{
       {{ startDate.getFullYear() }} - {{ endDate?.getFullYear() || 'Present' }}
     </div>
     <div>
-      <h3 class="text-lg font-bold">{{ school }}</h3>
+      <h3 class="font-bold text-lg">{{ school }}</h3>
       <div>{{ degree }}</div>
       <div>{{ fieldOfStudy }}</div>
     </div>

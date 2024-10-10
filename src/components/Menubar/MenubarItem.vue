@@ -1,6 +1,6 @@
 <template>
   <li
-    class="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm transition-colors duration-300"
+    class="dark:bg-neutral-900 p-4 bg-white rounded-md shadow-sm transition-colors duration-300"
   >
     <slot></slot>
   </li>

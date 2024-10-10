@@ -34,18 +34,18 @@ const print = () => window.print();
     <button
       type="button"
       title="Menubar"
-      class="text-xl text-gray-600 dark:text-gray-400 transition-opacity duration-300"
+      class="text-gray-600 dark:text-gray-400 duration-300 text-xl transition-opacity"
       :class="isMenubarShown ? 'opacity-0' : 'opacity-100'"
       @click="toggleMenubar"
     >
       <i class="fa-solid fa-bars"></i>
     </button>
     <div
-      class="fixed inset-0 px-6 py-4 transition-all duration-300"
+      class="duration-300 fixed inset-0 px-6 py-4 transition-all"
       :class="isMenubarShown ? 'visible' : 'invisible'"
     >
       <div
-        class="absolute inset-0 transition-all duration-300"
+        class="inset-0 transition-all duration-300 absolute"
         :class="
           isMenubarShown
             ? 'bg-opacity-70 backdrop-blur bg-neutral-200 dark:bg-neutral-700'
@@ -56,14 +56,14 @@ const print = () => window.print();
       <button
         type="button"
         title="Close Menubar"
-        class="text-3xl text-gray-600 dark:text-gray-400 absolute top-4 right-6 transition-opacity duration-300"
+        class="text-3xl text-gray-600 dark:text-gray-400 absolute transition-opacity duration-300 top-4 right-6"
         :class="isMenubarShown ? 'opacity-100' : 'opacity-0'"
         @click="toggleMenubar"
       >
         <i class="fa-solid fa-xmark"></i>
       </button>
       <ul
-        class="py-12 mx-8 space-y-3 transition-transform duration-300"
+        class="duration-300 py-12 mx-8 space-y-3 transition-transform"
         :class="isMenubarShown ? 'translate-y-0' : '-translate-y-full'"
       >
         <MenubarItem>
@@ -81,7 +81,7 @@ const print = () => window.print();
               <i class="fa-solid fa-language"></i>
             </span>
           </div>
-          <ul class="my-3 space-y-2">
+          <ul class="space-y-2 my-3">
             <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
               <button
                 type="button"

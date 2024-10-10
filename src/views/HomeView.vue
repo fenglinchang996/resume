@@ -13,8 +13,8 @@ useInitializeThemeAppearance();
 </script>
 
 <template>
-  <main class="relative mx-auto px-6 py-4 max-w-screen-lg md:pt-8">
-    <div class="absolute top-5 right-6 md:top-8 print:hidden">
+  <main class="relative px-6 py-4 mx-auto max-w-screen-lg md:pt-8">
+    <div class="absolute right-6 top-5 md:top-8 print:hidden">
       <div class="md:hidden"><Menubar /></div>
       <div class="hidden md:block"><Toolbar /></div>
     </div>
@@ -22,7 +22,7 @@ useInitializeThemeAppearance();
       <About />
     </div>
     <!-- mobile -->
-    <div class="space-y-6 lg:hidden print:hidden">
+    <div class="space-y-6 print:hidden lg:hidden">
       <Skills />
       <Experience />
       <OtherExperience />

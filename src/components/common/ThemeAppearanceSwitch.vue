@@ -20,11 +20,11 @@ const handleSwitch = () => {
     <button
       type="button"
       title="Switch Theme Appearance"
-      class="flex items-center w-12 h-6 border border-gray-300 bg-gray-200 dark:bg-gray-700 shadow-lg rounded-full"
+      class="flex items-center border border-gray-300 w-12 h-6 bg-gray-200 dark:bg-gray-700 shadow-lg rounded-full"
       @click="handleSwitch"
     >
       <span
-        class="inline-block w-5 h-5 text-sm bg-white rounded-full dark:bg-gray-900 dark:translate-x-[26px] duration-300"
+        class="inline-block text-sm bg-white rounded-full duration-300 w-5 h-5 dark:bg-gray-900 dark:translate-x-[26px]"
       >
         <span class="text-gray-600 dark:hidden">
           <i class="fa-regular fa-sun"></i>

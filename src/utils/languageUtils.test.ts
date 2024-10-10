@@ -1,6 +1,6 @@
 import { describe, test, expect, afterEach, vi } from 'vitest';
 import { getUserLanguage, setUserLanguage } from './languageUtils';
-import { Lang, USER_LANGUAGE_KEY } from '@/constant/language';
+import { Lang } from '@/constant/language';
 
 describe('test language utils', () => {
   const getItemSpy = vi.spyOn(window.Storage.prototype, 'getItem');

@@ -22,10 +22,10 @@ function handleSelect(lang: Lang) {
       <i class="fa-solid fa-language"></i>
     </button>
     <div
-      class="invisible opacity-0 translate-y-[-4px] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all"
+      class="transition-all invisible opacity-0 translate-y-[-4px] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0"
     >
       <ul
-        class="absolute top-[85%] right-[-10px] min-w-max py-2 pl-4 pr-8 space-y-1 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-900 shadow-xl"
+        class="absolute pl-4 space-y-1 rounded-md bg-white dark:bg-neutral-900 top-[85%] right-[-10px] min-w-max py-2 pr-8 border border-gray-300 dark:border-gray-700 shadow-xl"
       >
         <li v-for="{ text, value } in LANGUAGE_OPTIONS" :key="value">
           <button

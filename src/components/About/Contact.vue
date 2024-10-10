@@ -17,7 +17,7 @@ defineProps<{ contact: Contact }>();
         </a>
       </li>
       <li class="space-x-2">
-        <span class="inline-block w-4 h-4 text-[#0072b1] text-center">
+        <span class="inline-block w-4 h-4 text-center text-[#0072b1]">
           <i class="fa-brands fa-linkedin"></i>
         </span>
         <a class="underline" :href="`${decorateUrl(contact.linkedin)}`">
@@ -26,7 +26,7 @@ defineProps<{ contact: Contact }>();
       </li>
       <li class="space-x-2">
         <span
-          class="inline-block w-4 h-4 text-[#333333] dark:text-neutral-300 text-center"
+          class="inline-block w-4 h-4 dark:text-neutral-300 text-center text-[#333333]"
         >
           <i class="fa-brands fa-github"></i>
         </span>

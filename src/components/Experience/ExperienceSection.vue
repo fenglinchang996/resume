@@ -32,7 +32,7 @@ const endDateString = computed(() =>
 
 <template>
   <section class="space-y-1">
-    <div class="flex justify-between text-sm text-gray-600 dark:text-gray-400">
+    <div class="flex text-sm text-gray-600 dark:text-gray-400 justify-between">
       <div>
         {{ startDateString }}
         -
@@ -57,14 +57,14 @@ const endDateString = computed(() =>
       </div>
     </h3>
     <div>
-      <ul class="list-disc list-outside pl-4 [hyphens:auto]">
+      <ul class="[hyphens:auto] list-disc list-outside pl-4">
         <li v-for="descriptionItem of description" :key="descriptionItem.title">
           {{ descriptionItem.title }}
           <ul
             v-if="
               descriptionItem.children && descriptionItem.children.length > 0
             "
-            class="pl-4 list-circle list-outside"
+            class="pl-4 list-outside list-circle"
           >
             <li
               v-for="descriptionItemChild of descriptionItem.children"
@@ -76,7 +76,7 @@ const endDateString = computed(() =>
         </li>
       </ul>
     </div>
-    <div v-if="skills && skills.length > 0" class="pt-1 flex flex-wrap gap-2">
+    <div v-if="skills && skills.length > 0" class="flex pt-1 flex-wrap gap-2">
       <span
         v-for="skill of skills"
         :key="skill"
