@@ -7,6 +7,7 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'eslint:recommended',
     '@vue/eslint-config-typescript',
+    '@unocss',
   ],
   overrides: [
     {
@@ -19,5 +20,6 @@ module.exports = {
   },
   rules: {
     'vue/multi-word-component-names': 'off',
+    '@unocss/order': 'warn',
   },
 };
