@@ -3,188 +3,137 @@ import type { ResumeContent } from '@/types/resumeContent';
 export const resumeContentEN: ResumeContent = {
   about: {
     name: 'Feng-Lin Chang',
-    headline: 'Front-End Engineer',
+    headline: 'Software Engineer',
     contact: {
       email: 'paulespling@gmail.com',
       linkedin: 'linkedin.com/in/fenglinchang',
       github: 'github.com/fenglinchang996',
     },
     summary:
-      'Front-end engineer with 4 years experience developing and maintaining responsive websites. Familiar with web development basics. Also experienced in modern front-end frameworks and libraries, such as React, Vue and TypeScript. Seeking a role as a front-end engineer with a passion for creating immersive user experiences and developing high performance websites.',
+      'Software engineer with 5 years of experience specializing in frontend architecture and enterprise web applications. Experienced in React, Vue, and TypeScript, with a strong focus on modular architecture, production observability, and solving complex technical challenges.',
   },
   skills: [
     {
-      title: 'Language',
-      skillList: ['JavaScript / TypeScript', 'HTML', 'CSS', 'Python'],
+      title: 'Languages',
+      skillList: ['TypeScript', 'JavaScript', 'Python'],
     },
     {
-      title: 'Front-End Framework / Library',
+      title: 'Frontend & Architecture',
       skillList: [
-        'React',
-        'Vue',
-        'Redux',
-        'Pinia',
-        'Jest',
-        'styled-components',
-        'Tailwind CSS',
-        'UnoCSS',
-        'npm / pnpm',
-        'ESLint',
+        'Vue (Vue 3, Pinia)',
+        'React (Redux)',
+        'Micro-Frontends',
+        'Jest (Unit Testing)',
+        'Tailwind CSS / UnoCSS',
       ],
     },
     {
-      title: 'Backend Framework / Library',
-      skillList: ['Flask'],
-    },
-    {
-      title: 'DevOps',
-      skillList: [
-        'Docker',
-        'Azure Application Insights',
-        'Azure Log Analytics',
-      ],
-    },
-    {
-      title: 'Other',
-      skillList: ['Vim / Neovim', 'Git / GitHub', 'Scrum', 'Jira'],
+      title: 'Observability & Cloud',
+      skillList: ['Azure Application Insights', 'Docker'],
     },
   ],
   workExperience: [
     {
-      title: 'Front-End Engineer',
+      title: 'Software Engineer (Frontend Focused)',
       company: { name: 'AICS', url: 'https://aics.asus.com' },
       startDate: new Date(2022, 9),
+      endDate: new Date(2026, 7),
       description: [
         {
           title:
-            'Developed ASUS next-gen healthcare information platform (ASUS xHIS Platform)',
-          children: [
+            'Micro-Frontend Development & High-Throughput Feature Delivery',
+          items: [
             {
               title:
-                'Established core features for Outpatient Department (OPD) and Emergency Room (ER) services. These include developing Hospital Rules, Exam / Pathology Reports, and Patient Information Settings',
+                'Co-developed and maintained the next-gen healthcare platform (ASUS xHIS), building 50+ micro-frontend widgets with clean state management and strict modular boundaries.',
             },
             {
               title:
-                'Implemented various add-on features of the xHIS using the concepts of "Add-on Widgets" and "Micro-frontend", including functions such as ICD CPOE, Hospitalization Certificates, and Same-Treatment Settings',
-            },
-          ],
-        },
-        {
-          title: 'Built the log system for xHIS front-end ',
-          children: [
-            {
-              title:
-                'Implemented xHIS front-end logs via Azure Application Insights service',
-            },
-            {
-              title:
-                'Monitored and analyzed xHIS front-end logs to ensure compliance with Service Level Agreement (SLA) and to observe various Key Metrics (such as MAR and MAU)',
+                'Engineered and deployed critical healthcare features independently, accelerating release cycles and minimizing cross-module dependencies.',
             },
           ],
         },
         {
-          title: 'Optimized the development experience of xHIS front-end ',
-          children: [
+          title: 'Multi-Tenant Customization & Package Decoupling',
+          items: [
             {
               title:
-                'Introduced Atomic CSS design concept with implementation of UnoCSS to reduce the usage of complex styles, improving the efficiency of front-end development',
-            },
-            {
-              title:
-                'Refactored the in-house UI library to provide more flexible, user-friendly, and powerful UI components',
+                'Managed complex multi-hospital requirements by refactoring and extracting custom business/UI logic into separate packages, decoupling client-specific code from the core platform.',
             },
           ],
         },
-      ],
-      skills: [
-        'Vue',
-        'Pinia',
-        'TypeScript',
-        'UnoCSS',
-        'Jest',
-        'Azure Application Insights',
-        'Azure Log Analytics',
+        {
+          title: 'Frontend Observability & Production Debugging',
+          items: [
+            {
+              title:
+                'Instrumented frontend logging and leveraged Azure AppInsights for production debugging, SLA tracking, and feature usage telemetry.',
+            },
+          ],
+        },
+        {
+          title: 'API Abstraction & Resilient System Integration',
+          items: [
+            {
+              title:
+                'Designed unified, reusable API abstractions across heterogeneous external and government services, building resilient wrappers to isolate UI from backend complexity.',
+            },
+          ],
+        },
       ],
     },
     {
-      title: 'Front-End Engineer',
-      company: { name: '91APP, Inc', url: 'https://www.91app.com' },
+      title: 'Frontend Engineer',
+      company: { name: '91APP', url: 'https://www.91app.com' },
       startDate: new Date(2020, 8),
       endDate: new Date(2022, 4),
       description: [
         {
           title:
-            'Developed front-end part of e-commerce service, including HiLife logistics management, Google reCaptcha Enterprise integration, and shipping coupon feature',
+            'Developed core e-commerce SaaS features and customizable CMS components for enterprise retail clients, integrating logistics, coupon systems, and Google reCAPTCHA security.',
         },
         {
           title:
-            'Customized PXGo! online shopping site for PX Mart, e.g., re-designing category page, adding new features in store CMS(Content Management System) and refactoring product card',
+            'Migrated legacy features from AngularJS to React and Redux, and refactored core UI components to improve code reusability and maintainability.',
         },
-        {
-          title:
-            'Collaborated and communicated with team members (PO, UI/UX, QA, and other SWE) in SCRUM development process to deliver tasks on time',
-        },
-      ],
-      skills: [
-        'React',
-        'Redux',
-        'TypeScript',
-        'AngularJS',
-        'styled-components',
       ],
     },
     {
       title: 'R&D Engineer',
       company: { name: 'CTCI Corporation', url: 'https://www.ctci.com' },
-      startDate: new Date(2018, 3),
+      startDate: new Date(2016, 8),
       endDate: new Date(2020, 3),
       description: [
         {
           title:
-            'Collaborated with other departments to build process design tool and engineering data exchange plateform',
+            'Assisted in process engineering design of international EPC projects',
         },
-      ],
-    },
-    {
-      title: 'Process Engineer',
-      company: { name: 'CTCI Corporation', url: 'https://www.ctci.com' },
-      startDate: new Date(2016, 8),
-      endDate: new Date(2018, 3),
-      description: [
         {
           title:
-            'Assisted in process engineering design of international EPC projects',
+            'Co-developed internal process design tools and engineering data exchange platforms to automate workflows for international EPC projects.',
         },
       ],
     },
   ],
   otherExperience: [
     {
-      title: 'Front-End Teaching Assistant',
+      title: 'Frontend Teaching Assistant',
       company: { name: 'WeHelp', url: 'https://training.pada-x.com/wehelp' },
       startDate: new Date(2021, 11),
       endDate: new Date(2023, 11),
       description: [
-        { title: 'Mentored 75+ trainees to become junior front-end engineers' },
+        { title: 'Mentored 75+ trainees to become junior frontend engineers' },
       ],
     },
     {
-      title: 'Front-End Trainee',
+      title: 'Frontend Trainee',
       company: { name: 'AppWorks School', url: 'https://school.appworks.tw' },
       startDate: new Date(2020, 3),
       endDate: new Date(2020, 8),
       description: [
         {
           title:
-            'Learned programming knowledge for front-end development, e.g. HTML, CSS, JavaScript, Webpack, and React',
-        },
-        {
-          title:
-            'Completed the assigned project in 3 weeks to practice programming skills and problem-solving thoughts',
-        },
-        {
-          title:
-            'Built the personal project MindNote in 5 weeks: Designing the UI, constructing the code structure, and implementing the features independently',
+            'Completed a 16-week intensive frontend software engineering program, building hands-on web projects and transitioning into software engineering.',
         },
       ],
     },
@@ -211,150 +160,114 @@ export const resumeContentEN: ResumeContent = {
 export const resumeContentZHT: ResumeContent = {
   about: {
     name: '張峰林',
-    headline: '前端工程師',
+    headline: '軟體工程師',
     contact: {
       email: 'paulespling@gmail.com',
       linkedin: 'linkedin.com/in/fenglinchang',
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '擁有四年前端開發經驗，熟悉網頁開發基本技術，以及具備使用前端框架與工具的經驗，例如：React、Vue、TypeScript 等等。本科為化學工程領域，轉職為前端工程師後，參與過電商 SaaS 與醫療系統的開發，對打造產品與研究新技術充滿熱情，期望成為能夠建立良好使用者體驗與打造高效能網站的前端工程師。',
+      '擁有 5 年開發經驗的軟體工程師，專注於前端架構與企業級 Web 平台開發。熟悉 React、Vue 與 TypeScript，特別著重於模組化架構設計、線上可觀測性（Observability）以及解決複雜的工程技術挑戰。',
   },
   skills: [
     {
-      title: '語言',
-      skillList: ['JavaScript / TypeScript', 'HTML', 'CSS', 'Python'],
+      title: '程式語言',
+      skillList: ['TypeScript', 'JavaScript', 'Python'],
     },
     {
-      title: '前端框架 / 套件',
+      title: '前端與架構',
       skillList: [
-        'React',
-        'Vue',
-        'Redux',
-        'Pinia',
-        'Jest',
-        'styled-components',
-        'Tailwind CSS',
-        'UnoCSS',
-        'npm / pnpm',
-        'ESLint',
+        'Vue (Vue 3, Pinia)',
+        'React (Redux)',
+        'Micro-Frontends',
+        'Jest (單元測試)',
+        'Tailwind CSS / UnoCSS',
       ],
     },
     {
-      title: '後端框架 / 套件',
-      skillList: ['Flask'],
-    },
-    {
-      title: 'DevOps',
-      skillList: [
-        'Docker',
-        'Azure Application Insights',
-        'Azure Log Analytics',
-      ],
-    },
-    {
-      title: '其它',
-      skillList: ['Vim / Neovim', 'Git / GitHub', 'Scrum', 'Jira'],
+      title: '可觀測性與其它工具',
+      skillList: ['Azure Application Insights', 'Docker'],
     },
   ],
   workExperience: [
     {
-      title: '前端工程師',
+      title: '軟體工程師 (Frontend Focused)',
       company: { name: 'AICS', url: 'https://aics.asus.com' },
       startDate: new Date(2022, 9),
+      endDate: new Date(2026, 7),
       description: [
         {
-          title: '打造華碩次世代智慧醫療資訊平台（ASUS xHIS Platform）',
-          children: [
+          title: '微前端架構與高效能功能交付',
+          items: [
             {
               title:
-                '建立門診（OPD）與急診（ER）醫療資訊系統，包括開發醫療稽核規則、醫療報告顯示介面、病人資訊設定等多項核心功能',
+                '共同開發與維護次世代智慧醫療平台（ASUS xHIS），建立 50 個以上具備統一狀態管理與嚴謹模組邊界的微前端元件。',
             },
             {
               title:
-                '以「附加元件」與「微前端架構」的概念實作 xHIS 各項附加功能，包括 ICD CPOE、住院許可證與同療程設定等功能',
+                '獨立開發並交付關鍵醫療核心功能，加速版本發布週期並最小化跨模組相依性。',
             },
           ],
         },
         {
-          title: '建立 xHIS 前端日誌（Log）系統',
-          children: [
-            {
-              title: '使用 Application Insights 服務實作 xHIS 前端日誌',
-            },
+          title: '多租戶（Multi-Tenant）客製化與模組解耦',
+          items: [
             {
               title:
-                '使用 Grafana 與 Log Analytics 對 xHIS 前端日誌進行監控與分析，確認是否滿足服務級別協定（SLA），並用於觀測各項服務關鍵指標（Key Metrics，例如 MAR 或 MAU）',
+                '重構並抽離客製化業務與 UI 邏輯為獨立套件或模組，處理多間醫院複雜需求，有效將客戶專屬程式碼與核心平台解耦。',
             },
           ],
         },
         {
-          title: '最佳化 xHIS 前端開發體驗',
-          children: [
+          title: '前端可觀測性與線上環境偵錯',
+          items: [
             {
               title:
-                '引入原子化前端樣式設計概念，搭配 UnoCSS 實作，降低複雜樣式的使用，提高開發效率',
-            },
-            {
-              title: '重構內部 UI 元件庫，提供彈性易用且功能更強大的 UI 元件',
+                '建立前端日誌機制，並運用 Azure AppInsights 進行線上環境錯誤偵錯、SLA 監控與功能使用率追蹤。',
             },
           ],
         },
-      ],
-      skills: [
-        'Vue',
-        'Pinia',
-        'TypeScript',
-        'UnoCSS',
-        'Jest',
-        'Azure Application Insights',
-        'Azure Log Analytics',
+        {
+          title: 'API 抽象層與高韌性系統整合',
+          items: [
+            {
+              title:
+                '針對跨政府與外部服務設計統一且可複用的 API 抽象層，建立具備錯誤處理的防禦性封裝，隔離後端與外部複雜度。',
+            },
+          ],
+        },
       ],
     },
     {
       title: '前端工程師',
-      company: { name: '91APP, Inc', url: 'https://www.91app.com' },
+      company: { name: '91APP', url: 'https://www.91app.com' },
       startDate: new Date(2020, 8),
       endDate: new Date(2022, 4),
       description: [
         {
           title:
-            '開發電商 SaaS 相關服務，例如萊爾富配送管理、登入頁串接 Google reCaptcha、運費券使用等等',
+            '開發電商 SaaS 核心功能與企業零售客戶的客製化 CMS 元件，整合物流、優惠券系統與 Google reCAPTCHA 安全防護機制。',
         },
         {
           title:
-            '開發全聯購物網站 PX!Go 客製化功能，例如：客製化設計商品分類頁面、新增全聯專屬內容管理系統（CMS）功能、重構商品卡樣式等等',
+            '參與舊系統現代化，逐步將既有功能從 AngularJS 遷移至 React 與 Redux，並重構核心 UI 元件以提升程式碼複用性與可維護性。',
         },
-        {
-          title:
-            '與專案經理、UI/UX 設計師、測試員及其他工程師協作並以敏捷開發（SCRUM）來進行專案',
-        },
-      ],
-      skills: [
-        'React',
-        'Redux',
-        'TypeScript',
-        'AngularJS',
-        'styled-components',
       ],
     },
     {
       title: '研發工程師',
       company: { name: 'CTCI(中鼎集團)', url: 'https://www.ctci.com' },
-      startDate: new Date(2018, 3),
+      startDate: new Date(2016, 8),
       endDate: new Date(2020, 3),
       description: [
         {
-          title: '與其它部門合作打造方法設計工具與工程資料交換平台',
+          title: '協助執行國際 EPC 統包案的方法設計。',
+        },
+        {
+          title:
+            '與跨部門合作打造方法設計工具與工程資料交換平台，實現國際 EPC 專案工作流程的自動化。',
         },
       ],
-    },
-    {
-      title: '方法工程師',
-      company: { name: 'CTCI(中鼎集團)', url: 'https://www.ctci.com' },
-      startDate: new Date(2016, 8),
-      endDate: new Date(2018, 3),
-      description: [{ title: '協助執行國際 EPC 統包案的方法設計' }],
     },
   ],
   otherExperience: [
@@ -375,14 +288,7 @@ export const resumeContentZHT: ResumeContent = {
       description: [
         {
           title:
-            '學習前端開發知識與技術，例如：HTML、CSS、JavaScript、Webpack 與 React 等等',
-        },
-        {
-          title: '透過三週內完成指定專案，練習程式開發技巧與解決問題思維',
-        },
-        {
-          title:
-            '在五週內獨立發想並完成個人專案 MindNote：包括介面設計、程式架構與功能實作等等',
+            '完成為期 16 週的高強度前端軟體培訓計畫，透過實作專案練習並成功轉職軟體工程師。',
         },
       ],
     },

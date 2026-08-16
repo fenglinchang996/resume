@@ -22,7 +22,7 @@ export type Skill = {
 
 export type ExperienceDescription = {
   title: string;
-  children?: ExperienceDescription[];
+  items?: ExperienceDescription[];
 };
 
 export type Experience = {

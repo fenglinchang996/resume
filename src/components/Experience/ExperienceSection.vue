@@ -61,13 +61,11 @@ const endDateString = computed(() =>
         <li v-for="descriptionItem of description" :key="descriptionItem.title">
           {{ descriptionItem.title }}
           <ul
-            v-if="
-              descriptionItem.children && descriptionItem.children.length > 0
-            "
+            v-if="descriptionItem.items && descriptionItem.items.length > 0"
             class="pl-4 list-outside list-circle"
           >
             <li
-              v-for="descriptionItemChild of descriptionItem.children"
+              v-for="descriptionItemChild of descriptionItem.items"
               :key="descriptionItemChild.title"
             >
               {{ descriptionItemChild.title }}
