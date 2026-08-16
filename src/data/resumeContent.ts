@@ -28,14 +28,14 @@ export const resumeContentEN: ResumeContent = {
       ],
     },
     {
-      title: 'Observability & Cloud',
+      title: 'Observability & Tools',
       skillList: ['Azure Application Insights', 'Docker'],
     },
   ],
   workExperience: [
     {
       title: 'Software Engineer (Frontend Focused)',
-      company: { name: 'AICS', url: 'https://aics.asus.com' },
+      company: { name: 'ASUS AICS', url: 'https://aics.asus.com' },
       startDate: new Date(2022, 9),
       endDate: new Date(2026, 7),
       description: [
@@ -45,7 +45,7 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Co-developed and maintained the next-gen healthcare platform (ASUS xHIS), building 50+ micro-frontend widgets with clean state management and strict modular boundaries.',
+                'Co-developed and maintained the next-gen healthcare platform (ASUS xHIS), building 50+ micro-frontend widgets with unified state management and strict modular boundaries.',
             },
             {
               title:
@@ -106,27 +106,27 @@ export const resumeContentEN: ResumeContent = {
       description: [
         {
           title:
-            'Assisted in process engineering design of international EPC projects',
+            'Assisted in process engineering design for international EPC projects.',
         },
         {
           title:
-            'Co-developed internal process design tools and engineering data exchange platforms to automate workflows for international EPC projects.',
+            'Co-developed internal process design tools and engineering data exchange platforms to automate engineering workflows.',
         },
       ],
     },
   ],
   otherExperience: [
     {
-      title: 'Frontend Teaching Assistant',
-      company: { name: 'WeHelp', url: 'https://training.pada-x.com/wehelp' },
+      title: 'Teaching Assistant',
+      company: { name: 'WeHelp', url: 'https://wehelp.tw/academy' },
       startDate: new Date(2021, 11),
       endDate: new Date(2023, 11),
       description: [
-        { title: 'Mentored 75+ trainees to become junior frontend engineers' },
+        { title: 'Mentored 100+ trainees to become junior software engineers' },
       ],
     },
     {
-      title: 'Frontend Trainee',
+      title: 'Trainee',
       company: { name: 'AppWorks School', url: 'https://school.appworks.tw' },
       startDate: new Date(2020, 3),
       endDate: new Date(2020, 8),
@@ -191,13 +191,13 @@ export const resumeContentZHT: ResumeContent = {
   ],
   workExperience: [
     {
-      title: '軟體工程師 (Frontend Focused)',
-      company: { name: 'AICS', url: 'https://aics.asus.com' },
+      title: '軟體工程師（前端）',
+      company: { name: 'ASUS AICS', url: 'https://aics.asus.com' },
       startDate: new Date(2022, 9),
       endDate: new Date(2026, 7),
       description: [
         {
-          title: '微前端架構與高效能功能交付',
+          title: '微前端架構（Micro-Frontends）與高效率功能交付',
           items: [
             {
               title:
@@ -219,11 +219,11 @@ export const resumeContentZHT: ResumeContent = {
           ],
         },
         {
-          title: '前端可觀測性與線上環境偵錯',
+          title: '前端可觀測性（Observability）與線上環境偵錯',
           items: [
             {
               title:
-                '建立前端日誌機制，並運用 Azure AppInsights 進行線上環境錯誤偵錯、SLA 監控與功能使用率追蹤。',
+                '建立前端日誌機制，並運用 Azure AppInsights 進行線上環境偵錯、SLA 監控與功能使用追蹤。',
             },
           ],
         },
@@ -232,7 +232,7 @@ export const resumeContentZHT: ResumeContent = {
           items: [
             {
               title:
-                '針對跨政府與外部服務設計統一且可複用的 API 抽象層，建立具備錯誤處理的防禦性封裝，隔離後端與外部複雜度。',
+                '針對跨政府與外部服務，設計統一且可複用的 API 抽象層，建立具備錯誤處理的封裝，隔離後端與外部複雜度。',
             },
           ],
         },
@@ -256,7 +256,7 @@ export const resumeContentZHT: ResumeContent = {
     },
     {
       title: '研發工程師',
-      company: { name: 'CTCI(中鼎集團)', url: 'https://www.ctci.com' },
+      company: { name: '中鼎工程', url: 'https://www.ctci.com' },
       startDate: new Date(2016, 8),
       endDate: new Date(2020, 3),
       description: [
@@ -272,16 +272,14 @@ export const resumeContentZHT: ResumeContent = {
   ],
   otherExperience: [
     {
-      title: '前端助教',
-      company: { name: 'WeHelp', url: 'https://training.pada-x.com/wehelp' },
+      title: '助教',
+      company: { name: 'WeHelp', url: 'https://wehelp.tw/academy' },
       startDate: new Date(2021, 11),
       endDate: new Date(2023, 11),
-      description: [
-        { title: '協助輔導 75 位以上前端學員轉職成為初階前端工程師' },
-      ],
+      description: [{ title: '協助輔導 100 位以上學員轉職成為初階軟體工程師' }],
     },
     {
-      title: '前端學員',
+      title: '學員',
       company: { name: 'AppWorks School', url: 'https://school.appworks.tw' },
       startDate: new Date(2020, 3),
       endDate: new Date(2020, 8),
