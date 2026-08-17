@@ -1,6 +1,6 @@
 @media print {
   body {
-    zoom: 68%;
+    zoom: 80%;
   }
   @page {
     size: A4;
