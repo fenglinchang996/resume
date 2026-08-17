@@ -15,7 +15,7 @@ export const resumeContentEN: ResumeContent = {
   skills: [
     {
       title: 'Languages',
-      skillList: ['TypeScript', 'JavaScript', 'Python'],
+      skillList: ['JavaScript / TypeScript', 'Python'],
     },
     {
       title: 'Frontend & Architecture',
@@ -172,7 +172,7 @@ export const resumeContentZHT: ResumeContent = {
   skills: [
     {
       title: '程式語言',
-      skillList: ['TypeScript', 'JavaScript', 'Python'],
+      skillList: ['JavaScript / TypeScript', 'Python'],
     },
     {
       title: '前端與架構',
