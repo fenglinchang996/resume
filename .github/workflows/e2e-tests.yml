@@ -8,13 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Install PNPM
-        run: npm install -g pnpm
+          node-version: 'lts/*'
+          cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Build Pages
