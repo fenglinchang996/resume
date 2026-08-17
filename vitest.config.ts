@@ -1,13 +1,12 @@
 import { fileURLToPath } from 'node:url';
 import { configDefaults, defineConfig, mergeConfig } from 'vitest/config';
-import viteConfig from './vite.config';
+import viteConfig from './vite.config.ts';
 
 export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
       coverage: {
-        all: true,
         exclude: [
           '*.config.{js,ts}',
           '*.d.ts',
@@ -24,5 +23,5 @@ export default mergeConfig(
       root: fileURLToPath(new URL('./', import.meta.url)),
       reporters: ['verbose'],
     },
-  }),
+  }) as any,
 );
