@@ -11,7 +11,6 @@ export default mergeConfig(
           '*.config.{js,ts}',
           '*.d.ts',
           '*.{test,spec}.ts',
-          '.eslintrc.cjs',
           'dist/**',
           'src/types/**',
           'src/router/**',
@@ -23,5 +22,5 @@ export default mergeConfig(
       root: fileURLToPath(new URL('./', import.meta.url)),
       reporters: ['verbose'],
     },
-  }) as any,
+  }),
 );
