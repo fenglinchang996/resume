@@ -10,6 +10,6 @@ describe('Toolbar component', () => {
   test('should renders the child component', () => {
     expect(wrapper.getComponent(LanguageSelect)).toBeDefined();
     expect(wrapper.getComponent(PagePrint)).toBeDefined();
-    expect(wrapper.getComponent(ThemeAppearanceSwitch)).toBeDefined;
+    expect(wrapper.getComponent(ThemeAppearanceSwitch)).toBeDefined();
   });
 });
