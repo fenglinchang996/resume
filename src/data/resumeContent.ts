@@ -10,7 +10,7 @@ export const resumeContentEN: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      'Software engineer with 5 years of experience specializing in frontend architecture and enterprise web applications. Experienced in React, Vue, and TypeScript, with a strong focus on modular architecture, production observability, and solving complex technical challenges.',
+      'Software engineer with 5+ years of experience building enterprise web applications with React, Vue, and TypeScript. Experienced in developing features within modular frontend architecture, integrating external services, and solving complex production problems.',
   },
   skills: [
     {
@@ -18,7 +18,7 @@ export const resumeContentEN: ResumeContent = {
       skillList: ['JavaScript / TypeScript', 'Python'],
     },
     {
-      title: 'Frontend & Architecture',
+      title: 'Frontend',
       skillList: [
         'Vue (Vue 3, Pinia)',
         'React (Redux)',
@@ -28,37 +28,36 @@ export const resumeContentEN: ResumeContent = {
       ],
     },
     {
-      title: 'Observability & Tools',
+      title: 'Tools',
       skillList: ['Azure Application Insights', 'Docker'],
     },
   ],
   workExperience: [
     {
-      title: 'Software Engineer (Frontend Focused)',
+      title: 'Software Engineer (Frontend-Focused)',
       company: { name: 'ASUS AICS', url: 'https://aics.asus.com' },
       startDate: new Date(2022, 9),
       endDate: new Date(2026, 7),
       description: [
         {
-          title:
-            'Micro-Frontend Development & High-Throughput Feature Delivery',
+          title: 'Micro-Frontend Development & Rapid Feature Delivery',
           items: [
             {
               title:
-                'Co-developed and maintained the next-gen healthcare platform (ASUS xHIS), building 50+ micro-frontend widgets with unified state management and strict modular boundaries.',
+                'Co-developed and maintained the ASUS xHIS healthcare platform, implementing 50+ micro-frontend widgets within the existing modular architecture and shared state-management framework.',
             },
             {
               title:
-                'Engineered and deployed critical healthcare features independently, accelerating release cycles and minimizing cross-module dependencies.',
+                'Independently developed and deployed critical healthcare features, reducing cross-module dependencies and enabling faster, more flexible releases at the widget level.',
             },
           ],
         },
         {
-          title: 'Multi-Tenant Customization & Package Decoupling',
+          title: 'Multi-Tenant Customization',
           items: [
             {
               title:
-                'Managed complex multi-hospital requirements by refactoring and extracting custom business/UI logic into separate packages, decoupling client-specific code from the core platform.',
+                'Implemented and maintained multi-hospital customizations by extracting client-specific business/UI logic into separate packages, keeping custom code isolated from the core platform.',
             },
           ],
         },
@@ -67,16 +66,16 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Instrumented frontend logging and leveraged Azure AppInsights for production debugging, SLA tracking, and feature usage telemetry.',
+                'Integrated frontend logging and used Azure Application Insights for production debugging, SLA monitoring, and feature usage tracking.',
             },
           ],
         },
         {
-          title: 'API Abstraction & Resilient System Integration',
+          title: 'API Integration & Adapter Design',
           items: [
             {
               title:
-                'Designed unified, reusable API abstractions across heterogeneous external and government services, building resilient wrappers to isolate UI from backend complexity.',
+                'Implemented adapters within the existing API abstraction layer to integrate services from different sources, such as the NHI and third-party HIS vendors, behind a common interface.',
             },
           ],
         },
@@ -90,11 +89,11 @@ export const resumeContentEN: ResumeContent = {
       description: [
         {
           title:
-            'Developed core e-commerce SaaS features and customizable CMS components for enterprise retail clients, integrating logistics, coupon systems, and Google reCAPTCHA security.',
+            'Developed core e-commerce SaaS features, including logistics services, coupon systems, and login security (Google reCAPTCHA).',
         },
         {
           title:
-            'Migrated legacy features from AngularJS to React and Redux, and refactored core UI components to improve code reusability and maintainability.',
+            'Implemented customized CMS components for retail clients, such as advertising layouts and product pages.',
         },
       ],
     },
@@ -122,7 +121,10 @@ export const resumeContentEN: ResumeContent = {
       startDate: new Date(2021, 11),
       endDate: new Date(2023, 11),
       description: [
-        { title: 'Mentored 100+ trainees to become junior software engineers' },
+        {
+          title:
+            'Mentored 100+ trainees transitioning into junior software engineering roles.',
+        },
       ],
     },
     {
@@ -133,7 +135,7 @@ export const resumeContentEN: ResumeContent = {
       description: [
         {
           title:
-            'Completed a 16-week intensive frontend software engineering program, building hands-on web projects and transitioning into software engineering.',
+            'Completed a 16-week intensive frontend software engineering program with hands-on web development projects.',
         },
       ],
     },
@@ -167,7 +169,7 @@ export const resumeContentZHT: ResumeContent = {
       github: 'github.com/fenglinchang996',
     },
     summary:
-      '擁有 5 年開發經驗的軟體工程師，專注於前端架構與企業級 Web 平台開發。熟悉 React、Vue 與 TypeScript，特別著重於模組化架構設計、線上可觀測性（Observability）以及解決複雜的工程技術挑戰。',
+      '擁有 5 年開發經驗的軟體工程師，使用 React、Vue 與 TypeScript 等前端技術進行網頁應用程式開發。熟悉模組化前端開發，整合外部服務以及解決複雜的工程問題。',
   },
   skills: [
     {
@@ -175,7 +177,7 @@ export const resumeContentZHT: ResumeContent = {
       skillList: ['JavaScript / TypeScript', 'Python'],
     },
     {
-      title: '前端與架構',
+      title: '前端',
       skillList: [
         'Vue (Vue 3, Pinia)',
         'React (Redux)',
@@ -185,7 +187,7 @@ export const resumeContentZHT: ResumeContent = {
       ],
     },
     {
-      title: '可觀測性與其它工具',
+      title: '工具',
       skillList: ['Azure Application Insights', 'Docker'],
     },
   ],
@@ -197,24 +199,24 @@ export const resumeContentZHT: ResumeContent = {
       endDate: new Date(2026, 7),
       description: [
         {
-          title: '微前端架構（Micro-Frontends）與高效率功能交付',
+          title: '微前端架構（Micro-Frontends）與快速功能交付',
           items: [
             {
               title:
-                '共同開發與維護次世代智慧醫療平台（ASUS xHIS），建立 50 個以上具備統一狀態管理與嚴謹模組邊界的微前端元件。',
+                '共同開發與維護 ASUS xHIS 智慧醫療平台，使用內部狀態管理框架與模組架構實作 50 個以上微前端元件。',
             },
             {
               title:
-                '獨立開發並交付關鍵醫療核心功能，加速版本發布週期並最小化跨模組相依性。',
+                '獨立開發並部署醫療資訊核心功能，降低跨模組相依性，實現更快速、更具彈性的元件層級版本發布。',
             },
           ],
         },
         {
-          title: '多租戶（Multi-Tenant）客製化與模組解耦',
+          title: '多租戶（Multi-Tenant）客製化',
           items: [
             {
               title:
-                '重構並抽離客製化業務與 UI 邏輯為獨立套件或模組，處理多間醫院複雜需求，有效將客戶專屬程式碼與核心平台解耦。',
+                '抽離客製化業務與 UI 邏輯為獨立套件或模組，實現多間醫院客製化需求，將客戶專屬程式碼與核心平台解耦。',
             },
           ],
         },
@@ -223,16 +225,16 @@ export const resumeContentZHT: ResumeContent = {
           items: [
             {
               title:
-                '建立前端日誌機制，並運用 Azure AppInsights 進行線上環境偵錯、SLA 監控與功能使用追蹤。',
+                '實作前端日誌，並運用 Azure Application Insights 進行線上環境偵錯、SLA 監控與功能使用追蹤。',
             },
           ],
         },
         {
-          title: 'API 抽象層與高韌性系統整合',
+          title: 'API 整合與轉接器（Adapters）設計',
           items: [
             {
               title:
-                '針對跨政府與外部服務，設計統一且可複用的 API 抽象層，建立具備錯誤處理的封裝，隔離後端與外部複雜度。',
+                '針對不同來源的 API 服務，例如健保署與第三方 HIS 廠商，在既有的 API 抽象層上實作轉接器，將不同 API 封裝為統一介面。',
             },
           ],
         },
@@ -246,11 +248,10 @@ export const resumeContentZHT: ResumeContent = {
       description: [
         {
           title:
-            '開發電商 SaaS 核心功能與企業零售客戶的客製化 CMS 元件，整合物流、優惠券系統與 Google reCAPTCHA 安全防護機制。',
+            '開發電商 SaaS 核心功能，例如物流服務、優惠券系統與登入安全機制（Google reCAPTCHA）等。',
         },
         {
-          title:
-            '參與舊系統現代化，逐步將既有功能從 AngularJS 遷移至 React 與 Redux，並重構核心 UI 元件以提升程式碼複用性與可維護性。',
+          title: '為零售客戶實作客製化 CMS 元件，例如廣告版面與商品頁面等。',
         },
       ],
     },
@@ -276,7 +277,9 @@ export const resumeContentZHT: ResumeContent = {
       company: { name: 'WeHelp', url: 'https://wehelp.tw/academy' },
       startDate: new Date(2021, 11),
       endDate: new Date(2023, 11),
-      description: [{ title: '協助輔導 100 位以上學員轉職成為初階軟體工程師' }],
+      description: [
+        { title: '協助輔導 100 位以上學員轉職成為初階軟體工程師。' },
+      ],
     },
     {
       title: '學員',
@@ -286,7 +289,7 @@ export const resumeContentZHT: ResumeContent = {
       description: [
         {
           title:
-            '完成為期 16 週的高強度前端軟體培訓計畫，透過實作專案練習並成功轉職軟體工程師。',
+            '完成為期 16 週的高強度前端軟體培訓計畫，透過專案實作累積開發經驗，成功轉職為軟體工程師。',
         },
       ],
     },
