@@ -44,7 +44,7 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Co-developed and maintained the ASUS xHIS healthcare platform, implementing 50+ micro-frontend widgets within the existing modular architecture and shared state-management framework.',
+                'Co-developed and maintained the ASUS xHIS healthcare platform, implementing 50+ micro-frontend widgets within the modular architecture and shared state-management framework.',
             },
             {
               title:
@@ -75,7 +75,7 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Implemented adapters within the existing API abstraction layer to integrate services from different sources, such as the NHI and third-party HIS vendors, behind a common interface.',
+                'Implemented adapters within the API abstraction layer to integrate services from different sources, such as the NHI and third-party HIS vendors, behind a common interface.',
             },
           ],
         },
