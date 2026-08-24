@@ -40,7 +40,7 @@ export const resumeContentEN: ResumeContent = {
       endDate: new Date(2026, 7),
       description: [
         {
-          title: 'Micro-Frontend Development & Rapid Feature Delivery',
+          title: 'Micro-Frontend Development & Rapid Feature Deployment',
           items: [
             {
               title:
@@ -57,7 +57,7 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Implemented and maintained multi-hospital customizations by extracting client-specific business/UI logic into separate packages, keeping custom code isolated from the core platform.',
+                'Implemented and maintained multi-hospital customizations by extracting client-specific business/UI logic into separate modules, keeping custom code isolated from the core platform.',
             },
           ],
         },
@@ -66,7 +66,7 @@ export const resumeContentEN: ResumeContent = {
           items: [
             {
               title:
-                'Integrated frontend logging and used Azure Application Insights for production debugging, SLA monitoring, and feature usage tracking.',
+                'Integrated frontend logging with Azure Application Insights for SLA monitoring and feature tracking, reducing production issue diagnosis time from hours to minutes.',
             },
           ],
         },
@@ -199,7 +199,7 @@ export const resumeContentZHT: ResumeContent = {
       endDate: new Date(2026, 7),
       description: [
         {
-          title: '微前端架構（Micro-Frontends）與快速功能交付',
+          title: '微前端架構（Micro-Frontends）與快速功能發佈',
           items: [
             {
               title:
@@ -225,7 +225,7 @@ export const resumeContentZHT: ResumeContent = {
           items: [
             {
               title:
-                '實作前端日誌，並運用 Azure Application Insights 進行線上環境偵錯、SLA 監控與功能使用追蹤。',
+                '實作前端日誌，運用 Azure Application Insights 進行 SLA 監控與功能使用追蹤，並有效將線上問題除錯時間從數小時縮減至數十分鐘。',
             },
           ],
         },
