@@ -23,13 +23,13 @@ export const resumeContentEN: ResumeContent = {
         'Vue (Vue 3, Pinia)',
         'React (Redux)',
         'Micro-Frontends',
-        'Jest (Unit Testing)',
+        'Jest',
         'Tailwind CSS / UnoCSS',
       ],
     },
     {
       title: 'Tools',
-      skillList: ['Azure Application Insights', 'Docker'],
+      skillList: ['Azure Application Insights'],
     },
   ],
   workExperience: [
@@ -182,13 +182,13 @@ export const resumeContentZHT: ResumeContent = {
         'Vue (Vue 3, Pinia)',
         'React (Redux)',
         'Micro-Frontends',
-        'Jest (單元測試)',
+        'Jest',
         'Tailwind CSS / UnoCSS',
       ],
     },
     {
       title: '工具',
-      skillList: ['Azure Application Insights', 'Docker'],
+      skillList: ['Azure Application Insights'],
     },
   ],
   workExperience: [
